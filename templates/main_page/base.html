@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+    {% block css %} {% endblock %}
+</head>
+<body>
+    <header>
+        <div class="header__wrapper container">
+            <div class="header__wrapper--logo">
+                <a href="{% url 'main_page' %}">
+                    <img src="{% static 'main_page/dina_logo.svg' %}" alt="Логотип">
+                </a>
+            </div>
+
+            <div class="header__wrapper--nav_list">
+                {% for item in menu %}
+                    <li class="nav-list__item"><a href="{{ item.url }}">{{ item.title }}</a></li>
+                {% endfor %}
+                
+                <div class="lang_block">
+                    <img src="{% static 'main_page/lang_globus.svg' %}" alt="Глобус">
+                    <img src="{% static 'main_page/language.svg' %}" alt="Текущий язык">
+                    <img src="{% static 'main_page/switch_lang.svg' %}" alt="Переключение языка">
+
+                </div>
+            </div>
+
+            <div class="header__wrapper--make_appointment">
+                <button>
+                    <img class="appointment-icon" src="{% static 'main_page/make_appointment_icon.svg' %}" alt="">
+                    Записаться на прием
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    {% block content %} {% endblock %}
+
+    <footer>
+        <div class="footer__wrapper container">
+            <div class="footer__wrapper--logo_rights">
+                <img src="{% static 'main_page/dina_logo.svg' %}" alt="Логотип">
+
+                <!-- <p>© Dina Varlamova Oy 2024</h3> -->
+            </div>
+
+            <div class="footer__wrapper--address">
+                <h3>Адрес</h3>
+                <p id="address">Ohtokuja 3A</p>
+
+                <h3>Почтовый индекс</h3>
+                <p>80230 Joensuu</p>
+            </div>
+
+            <div class="footer__wrapper--country_flag">
+                <img src="{% static 'main_page/country_flag.png' %}" alt="">
+            </div>
+
+            <div class="footer__wrapper--contacts">
+                <h3>dinavarlamova@gmail.fi</h3>
+                <p>Возможен прием в вечернее время и в выходные дни</p>
+
+                <h3 id="phone-number">040 000 0000</h3>
+                <p>Есть онлайн запись на прием</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

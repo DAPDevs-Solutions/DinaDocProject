@@ -1,0 +1,105 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1300px;
+  min-width: 320px;
+  box-sizing: border-box
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER. Wrapper */
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  margin: auto;
+  
+}
+
+
+/* HEADER. User navigation */
+.header__wrapper--nav_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list__item {
+  list-style: none;
+}
+
+.nav-list__item a {
+  text-decoration: none;
+  color: black;
+  padding-right: 30px;
+  font-size: 20px;
+}
+
+
+
+/* HEDAER. Language choice */
+.lang_block {
+  display: flex;
+  align-items: center;
+}
+
+.lang_block > * {
+  margin-right: 10px;
+}
+
+
+
+/* HEADER. Make appointment */
+.header__wrapper--make_appointment {
+  display: flex;
+  align-items: center;
+}
+
+.header__wrapper--make_appointment button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 0;
+  background-color: #794a83;
+  color: white;
+  padding: 10px 20px 10px 20px;
+
+}
+
+.appointment-icon {
+  padding-right: 10px;
+}
+
+
+
+
+
+/* FOOTER */
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+
+#address {
+  margin-bottom: 10px;
+}
+
+#phone-number {
+  margin-top: 10px;
+}
