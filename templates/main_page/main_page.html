@@ -1,4 +1,4 @@
-{% extends 'main_page/base.html' %}
+{% extends 'base/base.html' %}
 {% load static %}
 
 {% block css %}
@@ -7,6 +7,85 @@
 
 {% block content %}
     <main>
+        <section class="about-doc__section">
+            <div class="about-doc container">
+                <div class="doc-info">
+                    <h1 id="doc-name">Дина Варламова</h1>
+                    <h3 id="doc-spec">Профессиональные услуги педиатра в Йоенсуу</h3>
+                </div>
+    
+                <img class="doc-photo" src="{% static 'main_page/doc_photo.png' %}" height="500" alt="Фото врача">
+            </div>
+        </section>
 
+        <section class="about-health__section">
+            <div class="about-health container">
+                <h2 id="health-above">Здоровье превыше всего</h2>
+                <p id="about-clinic">
+                    Клиника Дины Варламовой занимается детскими заболеваниями и предлагает индивидуальный 
+                    подход к каждому маленькому пациенту и его родителю. Здесь используются не только 
+                    передовые технологии, но и создается комфортная атмосфера, в которой пациенты 
+                    чувствуют себя спокойно и защищено.
+                </p>
+
+                <div class="advantages-icons">
+                    <div class="individual_approach">
+                        <img src="{% static 'main_page/baby_icon.svg' %}" alt="Индивидуальный подход">
+                        <p>Индивидуальный подход</p>
+                    </div>
+                    
+                    <div class="modern_equipment">
+                        <img src="{% static 'main_page/duck_icon.svg' %}" alt="Оборудование">
+                        <p>Современное оборудование</p>
+                    </div>
+
+                    <div class="comfortable_atmosphere">
+                        <img src="{% static 'main_page/newborn_icon.svg' %}" alt="Атмосфера">
+                        <p>Комфортная атмосфера</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-doc-desc__section">
+            <div class="about-doc-desc container">
+                <div class="about-doc__fullinfo">
+                    <h2>О докторе</h2>
+
+                    <p>Я педиатр общего терапевт общего профиля с опытом более 20 лет.</p>
+
+                    <p>Активно занимаюсь детскими болезнями.</p>
+
+                    <p>
+                        Я выполняю все наиболее распространенные процедуры, такие как 
+                        удаление родинок и папиллом и инъекции в суставы. 
+                        Я также устанавливаю и извлекаю ВМС. У меня также есть 
+                        большой опыт в области неотложной медицины.
+                    </p>
+                </div>
+
+                <div class="about-doc__photo">
+                    <img src="{% static 'main_page/doc_photo.png' %}" height="500" alt="Фото врача">
+                </div>
+            </div>
+        </section>
+
+        <section class="personal-approach__section">
+            <div class="personal-approach container">
+                <p>Хотите индивидуальный подход? Клиника <b>Дины Варламовой</b> к Вашим услугам!</p>
+
+                <button>
+                    <img class="appointment-icon" src="{% static 'base/make_appointment_icon.svg' %}" alt="">
+                    Записаться на прием
+                </button>
+            </div>
+        </section>
+
+        <section class="google-map__section">
+            <div class="google-map container">
+                
+            </div>
+
+        </section>
     </main>
 {% endblock %}

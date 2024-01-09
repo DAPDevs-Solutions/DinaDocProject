@@ -10,42 +10,44 @@
 </head>
 <body>
     <header>
-        <div class="header__wrapper container">
+        <div class="header__wrapper header-footer_container">
             <div class="header__wrapper--logo">
                 <a href="{% url 'main_page' %}">
-                    <img src="{% static 'main_page/dina_logo.svg' %}" alt="Логотип">
+                    <img src="{% static 'base/dina_logo.svg' %}" alt="Логотип">
                 </a>
             </div>
 
-            <div class="header__wrapper--nav_list">
-                {% for item in menu %}
-                    <li class="nav-list__item"><a href="{{ item.url }}">{{ item.title }}</a></li>
-                {% endfor %}
-                
-                <div class="lang_block">
-                    <img src="{% static 'main_page/lang_globus.svg' %}" alt="Глобус">
-                    <img src="{% static 'main_page/language.svg' %}" alt="Текущий язык">
-                    <img src="{% static 'main_page/switch_lang.svg' %}" alt="Переключение языка">
+            <div class="header__wrapper--user_nav">
+                <div class="user_nav--menu_list">
+                    <ul class="menu_list--list_items">
+                        {% for item in menu %}
+                            <li class="item"><a href="{{ item.url }}">{{ item.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    
+                    <div class="lang_block">
+                        <img src="{% static 'base/lang_globus.svg' %}" alt="Глобус">
+                        <img src="{% static 'base/language.svg' %}" alt="Текущий язык">
+                        <img src="{% static 'base/switch_lang.svg' %}" alt="Переключение языка">
+                    </div>
+                </div>
 
+                <div class="nav_list--make_appointment">
+                    <button>
+                        <img class="appointment-icon" src="{% static 'base/make_appointment_icon.svg' %}" alt="">
+                        Записаться на прием
+                    </button>
                 </div>
             </div>
-
-            <div class="header__wrapper--make_appointment">
-                <button>
-                    <img class="appointment-icon" src="{% static 'main_page/make_appointment_icon.svg' %}" alt="">
-                    Записаться на прием
-                </button>
-            </div>
-
         </div>
     </header>
 
     {% block content %} {% endblock %}
 
     <footer>
-        <div class="footer__wrapper container">
+        <div class="footer__wrapper header-footer_container">
             <div class="footer__wrapper--logo_rights">
-                <img src="{% static 'main_page/dina_logo.svg' %}" alt="Логотип">
+                <img src="{% static 'base/dina_logo.svg' %}" alt="Логотип">
 
                 <p>© Dina Varlamova Oy 2024</h3>
             </div>
@@ -57,7 +59,7 @@
             </div>
 
             <div class="footer__wrapper--country_flag">
-                <img src="{% static 'main_page/country_flag.png' %}" alt="">
+                <img src="{% static 'base/country_flag.png' %}" alt="">
             </div>
 
             <div class="footer__wrapper--contact_mail footer-align-center">
