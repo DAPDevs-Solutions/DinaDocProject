@@ -1,0 +1,96 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/main_page.css' %}">
+{% endblock %}
+
+{% block content %}
+    <main>
+        <section class="about-doc__section">
+            <div class="about-doc container">
+                <div class="doc-info">
+                    <h1 id="doc-name">Дина Варламова</h1>
+                    <h3 id="doc-spec">Профессиональные услуги педиатра в Йоенсуу</h3>
+                </div>
+
+                <div class="doc-photo">
+                    <img src="{% static 'main_page/doc_photo.png' %}" alt="Фото врача">
+                </div>
+            </div>
+        </section>
+
+        <section class="about-health__section">
+            <div class="about-health container">
+                <h2 id="health-above">Здоровье превыше всего</h2>
+                <p id="about-clinic">
+                    Клиника Дины Варламовой занимается детскими заболеваниями и предлагает индивидуальный подход 
+                    к каждому маленькому пациенту и его родителю. Здесь используются не только передовые 
+                    технологии, но и создается комфортная атмосфера, в которой пациенты чувствуют себя спокойно 
+                    и защищено.
+                </p>
+
+                <div class="advantages-icons">
+                    <div class="individual_approach">
+                        <img src="{% static 'main_page/baby_icon.svg' %}" alt="Индивидуальный подход">
+                        <p>Индивидуальный подход</p>
+                    </div>
+                    
+                    <div class="modern_equipment">
+                        <img src="{% static 'main_page/duck_icon.svg' %}" alt="Оборудование">
+                        <p>Современное оборудование</p>
+                    </div>
+
+                    <div class="comfortable_atmosphere">
+                        <img src="{% static 'main_page/newborn_icon.svg' %}" alt="Атмосфера">
+                        <p>Комфортная атмосфера</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-doc-desc__section">
+            <div class="about-doc-desc container">
+                <div class="about-doc__fullinfo">
+                    <h2>О докторе</h2>
+
+                    <p>Я практикующий врач-педиатр с большим опытом работы.</p>
+
+                    <p>Моя главная задача – забота о здоровье ваших детей.</p>
+
+                    <p>
+                        Современный подход, профессионализм и теплота в обслуживании – вот ключевые 
+                        принципы, на которых строится моя работа. 
+                    </p>
+                    <p>Откройте дверь в мир крепкого здоровья вашего малыша!</p>
+                </div>
+
+                <div class="about-doc__photo">
+                    <img src="{% static 'main_page/doc_photo.png' %}" alt="Фото врача">
+                </div>
+            </div>
+        </section>
+
+        <section class="personal-approach__section">
+            <div class="personal-approach container">
+                <p>Хотите индивидуальный подход? Клиника <b>Дины Варламовой</b> к Вашим услугам!</p>
+
+                <button>
+                    <img class="appointment-icon" src="{% static 'base/make_appointment_icon.svg' %}" alt="">
+                    Записаться на прием
+                </button>
+            </div>
+        </section>
+
+        <section class="google-map__section">
+            <div class="google-map container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459.47996542581296!2d29.8236315
+                    41689405!3d62.57077858690958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469b8f55435babbf%3
+                    A0xe22209175c13fd3!2zT2h0b2t1amEgMywgODAyMzAgSm9lbnN1dSwg0KTQuNC90LvRj9C90LTQuNGP!5e0!3m2!1sru!2sru!
+                    4v1704971545676!5m2!1sru!2sru" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+{% endblock %}

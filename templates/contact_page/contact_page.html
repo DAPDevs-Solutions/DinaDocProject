@@ -1,0 +1,46 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/contact_page.css' %}">
+{% endblock %}
+
+{% block content %}
+    <main>
+        <section class="contact-us__section">
+            <div class="contact-us container">
+                <div class="contact-us__info">
+                    <h2>СВЯЖИТЕСЬ С НАМИ</h2>
+
+                    <div class="work-hours">
+                        <h3>Часы работы</h3>
+
+                        <p>пн-пт 10:00 - 20:00,</p>
+                        <p>сб 10:00 - 16:00</p>
+                    </div>
+
+                    <div class="our-address">
+                        <p>Ohtokuja 3A, Joensuu 80230</p>
+                        <p>040 000 0000</p>
+                        <p>dinavarlamova@gmail.fi</p>
+                    </div>
+                </div>
+
+                <div class="contact-us__form">
+                    <form method="post" action="{% url 'contact_page' %}">
+                        {% csrf_token %}
+                        {{ feedback_form.as_p }}
+                    </form>
+
+                    <form method="post" action="{% url 'contact_page' %}">
+                        {% csrf_token %}
+
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+{% endblock %}
