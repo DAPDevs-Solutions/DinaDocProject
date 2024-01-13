@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="icon" type="image/x-con" href="{% static 'base/images/favicon.ico' %}">
     <title>{% block title %}{% endblock %}</title>
     {% block css %} {% endblock %}
 </head>
@@ -13,7 +14,7 @@
         <div class="header__wrapper header-footer_container">
             <div class="header__wrapper--logo">
                 <a href="{% url 'menu_page' %}">
-                    <img src="{% static 'base/dina_logo.svg' %}" alt="Логотип">
+                    <img src="{% static 'base/images/dina_logo.svg' %}" alt="Логотип">
                 </a>
             </div>
 
@@ -26,15 +27,15 @@
                     </ul>
                     
                     <div class="lang_block">
-                        <img src="{% static 'base/lang_globus.svg' %}" alt="Глобус">
-                        <img src="{% static 'base/language.svg' %}" alt="Текущий язык">
-                        <img src="{% static 'base/switch_lang.svg' %}" alt="Переключение языка">
+                        <img src="{% static 'base/images/lang_globus.svg' %}" alt="Глобус">
+                        <img src="{% static 'base/images/language.svg' %}" alt="Текущий язык">
+                        <img src="{% static 'base/images/switch_lang.svg' %}" alt="Переключение языка">
                     </div>
                 </div>
 
                 <div class="nav_list--make_appointment">
                     <button>
-                        <img class="appointment-icon" src="{% static 'base/make_appointment_icon.svg' %}" alt="">
+                        <img class="appointment-icon" src="{% static 'base/images/make_appointment_icon.svg' %}" alt="Иконка записи на прием">
                         Записаться на прием
                     </button>
                 </div>
@@ -47,7 +48,7 @@
     <footer>
         <div class="footer__wrapper header-footer_container">
             <div class="footer__wrapper--logo_rights">
-                <img src="{% static 'base/dina_logo.svg' %}" alt="Логотип">
+                <img src="{% static 'base/images/dina_logo.svg' %}" alt="Логотип">
 
                 <p>© Dina Varlamova Oy 2024</p>
             </div>
@@ -59,7 +60,7 @@
             </div>
 
             <div class="footer__wrapper--country_flag">
-                <img src="{% static 'base/country_flag.png' %}" alt="">
+                <img src="{% static 'base/images/country_flag.png' %}" alt="">
             </div>
 
             <div class="footer__wrapper--contact_mail footer-align-center">

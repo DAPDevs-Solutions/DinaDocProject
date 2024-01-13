@@ -21,8 +21,113 @@ h1, h2, h3, p {
     padding: 0 0 100px 0;
 }
 
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
 .contact-us__info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+.contact-us__info h2,
+.work-hours h3 {
+    font-weight: 500;
+}
+
+.work-hours > *:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.address,
+.phone,
+.email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.address img,
+.phone img,
+.email img {
+    margin-right: 15px;
+}
+
+.contact-us__form {
+    border: 2px solid #794A83;
+    padding: 45px 55px 45px 55px;
+    border-radius: 30px;
+}
+
+.form_field > * {
+    box-sizing: border-box;
+}
+
+.contact-us__form h2 {
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.contact-us__form p {
+    font-weight: 300;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.form_field p {
+    margin-bottom: 15px;
+}
+
+.form_field label {
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.form_field input,
+.form_field textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form_field input, textarea {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #794A83;
+}
+
+.form_field input {
+    height: 40px;
+}
+
+.form_field textarea {
+    height: 120px;
+}
+
+.send-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #794a83;
+      border-radius: 30px;
+    color: #FFFFFF;
+    border: 0;
+    padding: 10px 20px 10px 20px;
+}
+
+.send-btn svg {
+    margin-right: 10px;
+}
+
+

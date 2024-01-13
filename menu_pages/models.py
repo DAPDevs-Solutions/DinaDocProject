@@ -14,13 +14,13 @@ class Menu(models.Model):
 
 
 class ContactUs(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, verbose_name='Имя')
     email = models.EmailField()
-    message = models.TextField()
+    message = models.TextField(verbose_name='Сообщение')
 
     def __str__(self):
-        return f"Сообщение {self.message} от пользователя {self.name}"
+        return f"Сообщение {self.message} от пользователя {self.email}"
 
     class Meta:
-        verbose_name = 'Связь с нами'
-        verbose_name_plural = 'Связь с нами'
+        verbose_name = 'Обратная связь'
+        verbose_name_plural = 'Обратная связь'
