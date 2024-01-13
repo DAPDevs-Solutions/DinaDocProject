@@ -24,3 +24,18 @@ class ContactUs(models.Model):
     class Meta:
         verbose_name = 'Связь с нами'
         verbose_name_plural = 'Связь с нами'
+
+
+class Category(models.Model):
+    category = models.CharField(max_length=40)
+
+    def __str__(self):
+        return f'Category - {self.category}'
+
+
+class ServiceBlock(models.Model):
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    service = models.CharField(max_length=30)
+
+    def __str__(self):
+        return f'Service - {self.service}'
