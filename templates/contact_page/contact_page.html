@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="{% static 'css/contact_page.css' %}">
 {% endblock %}
 
+<title>{% block title %}Контакты{% endblock %}</title>
+
 {% block content %}
     <main>
         <section class="contact-us__section">
@@ -19,26 +21,36 @@
                         <p>сб 10:00 - 16:00</p>
                     </div>
 
-                    <div class="our-address">
-                        <p>Ohtokuja 3A, Joensuu 80230</p>
-                        <p>040 000 0000</p>
-                        <p>dinavarlamova@gmail.fi</p>
+                    <div class="our-contacts">
+                        <div class="address">
+                            <img src="{% static 'main_page/address_icon.svg' %}" alt="Иконка адреса">
+                            <p>Ohtokuja 3A, Joensuu 80230</p>
+                        </div>
+                        
+                        <div class="phone">
+                            <img src="{% static 'main_page/call_icon.svg' %}" alt="Иконка звонка">
+                            <p>040 000 0000</p>
+                        </div>
+                        
+                        <div class="email">
+                            <img src="{% static 'main_page/email_icon.svg' %}" alt="Иконка емейла">
+                            <p>dinavarlamova@gmail.fi</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="contact-us__form">
-                    <form method="post" action="{% url 'contact_page' %}">
+                    <h2>Отправьте нам сообщение</h2>
+                    
+                    <p>Не стесняйтесь написать нам. Мы ответим вам как можно скорее.</p>
+                    
+                    <form method="POST" action="{% url 'contact_page' %}">
                         {% csrf_token %}
-                        {{ feedback_form.as_p }}
-                    </form>
-
-                    <form method="post" action="{% url 'contact_page' %}">
-                        {% csrf_token %}
-
-
+                        <div class="form_field">
+                            {{ feedback_form.as_p }}
+                        </div>
                     </form>
                 </div>
-
             </div>
         </section>
 
