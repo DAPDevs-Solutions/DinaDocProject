@@ -101,7 +101,33 @@ h1, h2, h3, p {
     border-bottom: 1px solid #794A83;
 }
 
+.form_field input {
+    height: 40px;
+}
+
 .form_field textarea {
     height: 120px;
 }
+
+.send-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #794a83;
+      border-radius: 30px;
+    color: #FFFFFF;
+    border: 0;
+    padding: 10px 20px 10px 20px;
+}
+
+.send-btn svg {
+    margin-right: 10px;
+}
+
 
