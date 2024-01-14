@@ -23,17 +23,26 @@
 
                     <div class="our-contacts">
                         <div class="address">
-                            <img src="{% static 'main_page/address_icon.svg' %}" alt="Иконка адреса">
+                            <div class="address-icon">
+                                <img src="{% static 'main_page/address_icon.svg' %}" alt="Иконка адреса">
+                            </div>  
+                            
                             <p>Ohtokuja 3A, Joensuu 80230</p>
                         </div>
                         
                         <div class="phone">
-                            <img src="{% static 'main_page/call_icon.svg' %}" alt="Иконка звонка">
+                            <div class="phone-icon">
+                                <img src="{% static 'main_page/call_icon.svg' %}" alt="Иконка звонка">
+                            </div>
+                            
                             <p>040 000 0000</p>
                         </div>
                         
                         <div class="email">
-                            <img src="{% static 'main_page/email_icon.svg' %}" alt="Иконка емейла">
+                            <div class="email-icon">
+                                <img src="{% static 'main_page/email_icon.svg' %}" alt="Иконка емейла">
+                            </div>
+                            
                             <p>dinavarlamova@gmail.fi</p>
                         </div>
                     </div>
@@ -48,7 +57,12 @@
                         {% csrf_token %}
                         
                         <div class="form_field">
-                            {{ feedback_form.as_p }}
+                            {% for field in feedback_form %}
+                            <div class="form_field">
+                                <p>{{ field.label }}</p>
+                                <p>{{ field }}</p>
+                            </div>
+                        {% endfor %}
                             
                             <div class="send-button">
                                 <button class="send-btn">

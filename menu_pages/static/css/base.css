@@ -12,6 +12,10 @@ body {
     color: #000000;
 }
 
+main {
+    flex: 1;
+}
+
 .header-footer_container {
     max-width: 1400px;
     min-width: 320px;
@@ -111,7 +115,7 @@ h1, h2, h3, ul, li, p {
 
 /* FOOTER */
 footer {
-    /*padding: 0 0 10px 0;*/
+    padding: 0 0 20px 0;
 }
 
 .footer__wrapper {
