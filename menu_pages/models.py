@@ -9,8 +9,8 @@ class Menu(models.Model):
         return self.title
 
     class Meta:
-        verbose_name = 'Меню'
-        verbose_name_plural = 'Меню'
+        verbose_name = 'Menu'
+        verbose_name_plural = 'Menu'
 
 
 class ContactUs(models.Model):
@@ -22,8 +22,8 @@ class ContactUs(models.Model):
         return f"Сообщение {self.message} от пользователя {self.name}"
 
     class Meta:
-        verbose_name = 'Связь с нами'
-        verbose_name_plural = 'Связь с нами'
+        verbose_name = 'Feedback'
+        verbose_name_plural = 'Feedback'
 
 
 class Category(models.Model):
@@ -32,6 +32,10 @@ class Category(models.Model):
     def __str__(self):
         return f'Category - {self.category}'
 
+    class Meta:
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
+
 
 class ServiceBlock(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
@@ -39,3 +43,7 @@ class ServiceBlock(models.Model):
 
     def __str__(self):
         return f'Service - {self.service}'
+
+    class Meta:
+        verbose_name = 'Service'
+        verbose_name_plural = 'Services'
