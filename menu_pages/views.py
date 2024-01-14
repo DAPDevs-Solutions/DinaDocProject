@@ -2,7 +2,7 @@ from django.views.generic.edit import CreateView
 from django.views.generic import TemplateView
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
-from .models import Menu, ContactUs, Category
+from .models import Menu, ContactUs, Category, Price
 from .forms import FeedbackForm
 
 menu = Menu.objects.all()
@@ -44,6 +44,15 @@ class PricePage(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['menu'] = menu
+
+        all_prices = Price.objects.values('title', 'price')
+
+        appointment_prices = all_prices.filter(category='appointment')
+        prescription_prices = all_prices.filter(category='prescription')
+
+        context['appointment_prices'] = appointment_prices
+        context['prescription_prices'] = prescription_prices
+
         return context
 
 
