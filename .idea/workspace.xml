@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dabf8d08-ac41-4fc4-8943-fe98557f0fba" name="Changes" comment="Added:&#10;- html template for price page&#10;- page handler">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_pages/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_pages/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_pages/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_pages/static/css/contact_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/static/css/contact_page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_pages/static/css/main_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/static/css/main_page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact_page/contact_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact_page/contact_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/price_page/price_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/price_page/price_page.html" afterDir="false" />
-    </list>
+    <list default="true" id="dabf8d08-ac41-4fc4-8943-fe98557f0fba" name="Changes" comment="Some changes have been made" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +53,7 @@
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/lukja/Desktop/menu_pages_category.csv",
+    "last_opened_file_path": "C:/Users/lukja/PycharmProjects/DinaDocProject/menu_pages/static/main_page",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -81,6 +71,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lukja\PycharmProjects\DinaDocProject\menu_pages\static\main_page" />
       <recent name="C:\Users\lukja\PycharmProjects\DinaDocProject\menu_pages\static\base\images" />
       <recent name="C:\Users\lukja\PycharmProjects\DinaDocProject\menu_pages\static\base" />
     </key>
@@ -187,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705218143821</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Some changes have been made">
+      <option name="closed" value="true" />
+      <created>1705233536172</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705233536172</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +225,8 @@
     <MESSAGE value="." />
     <MESSAGE value="Intermediate file" />
     <MESSAGE value="Added:&#10;- html template for price page&#10;- page handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added:&#10;- html template for price page&#10;- page handler" />
+    <MESSAGE value="Some changes have been made" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some changes have been made" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DinaDocProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1705210053585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
