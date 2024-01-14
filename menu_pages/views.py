@@ -32,18 +32,5 @@ class ContactPage(CreateView):
         context['feedback_form'] = self.form_class()
         return context
 
-    # @staticmethod
-    # def get_feedback_form(request):
-    #     if request.method == 'POST':
-    #         feedback_form = FeedbackForm(request.POST)
-    #         if feedback_form.is_valid():
-    #             feedback_form.save()
-    #             return redirect('contact_page')
-    #     else:
-    #         feedback_form = FeedbackForm()
-    #
-    #     context = {'feedback_form': feedback_form}
-    #     return render(request, 'contact_page/contact_page.html', context)
-
 
 
