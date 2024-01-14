@@ -2,9 +2,8 @@ from django.views.generic.edit import CreateView
 from django.views.generic import TemplateView
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
-from .models import Menu, ContactUs
+from .models import Menu, ContactUs, Category
 from .forms import FeedbackForm
-
 
 menu = Menu.objects.all()
 
@@ -32,18 +31,21 @@ class ContactPage(CreateView):
         context['feedback_form'] = self.form_class()
         return context
 
-    # @staticmethod
-    # def get_feedback_form(request):
-    #     if request.method == 'POST':
-    #         feedback_form = FeedbackForm(request.POST)
-    #         if feedback_form.is_valid():
-    #             feedback_form.save()
-    #             return redirect('contact_page')
-    #     else:
-    #         feedback_form = FeedbackForm()
-    #
-    #     context = {'feedback_form': feedback_form}
-    #     return render(request, 'contact_page/contact_page.html', context)
 
+class ServicesPage(TemplateView):
+    template_name = 'services_page/services_page.html'
+    context_object_name = 'menu'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['menu'] = menu
 
+        categories = Category.objects.all()
+
+        services_dict = {}
+        for category in categories:
+            services = category.serviceblock_set.values_list('service', flat=True)
+            services_dict[category.category] = list(services)
+
+        context['services_dict'] = services_dict
+        return context

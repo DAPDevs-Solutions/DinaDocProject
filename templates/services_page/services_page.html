@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/services_page.css' %}">
+{% endblock %}
+
+{% block content %}
+    <main>
+        <section class="services__section">
+            <div class="services container">
+                <h2>Услуги</h2>
+                <div class="services-blocks">
+                    {% for category, services in services_dict.items %}
+                        <div class="category_and_services">
+                            <p class="category">{{ category }}</p>
+                            <div class="all-services">
+                                {% for service in services %}
+                                    <p class="one-service">{{ service }}</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock content %}

@@ -1,0 +1,43 @@
+.services h2 {
+    font-weight: 300;
+    text-align: center;
+    padding: 20px 0 70px;
+}
+
+.services-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.category_and_services {
+    border: 1px solid #794a83;
+    border-radius: 32px;
+    max-width: 600px;
+    min-width: 600px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    min-height: 200px;
+}
+
+.category_and_services:last-child {
+    min-width: 100%;
+}
+
+.category {
+    text-transform: uppercase;
+    color: #794a83;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.all-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100px;
+    font-weight: 300;
+}
