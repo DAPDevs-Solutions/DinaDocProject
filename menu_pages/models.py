@@ -39,7 +39,7 @@ class Category(models.Model):
 
 class ServiceBlock(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    service = models.CharField(max_length=30)
+    service = models.CharField(max_length=100)
 
     def __str__(self):
         return f'Service - {self.service}'
