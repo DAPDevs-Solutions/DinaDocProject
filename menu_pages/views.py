@@ -26,8 +26,10 @@ class ServicesPage(TemplateView):
         context = super().get_context_data(**kwargs)
         context['menu'] = menu
 
+        # get all categories of services
         categories = Category.objects.all()
 
+        # iterate through the categories and their services and write them down in the dictionary
         services_dict = {}
         for category in categories:
             services = category.serviceblock_set.values_list('service', flat=True)
@@ -45,9 +47,12 @@ class PricePage(TemplateView):
         context = super().get_context_data(**kwargs)
         context['menu'] = menu
 
+        # get all prices
         all_prices = Price.objects.values('title', 'price')
 
+        # get all appointment prices
         appointment_prices = all_prices.filter(category='appointment')
+        # get all prescription prices
         prescription_prices = all_prices.filter(category='prescription')
 
         context['appointment_prices'] = appointment_prices
