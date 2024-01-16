@@ -35,8 +35,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -103,10 +103,9 @@ USE_I18N = True
 
 USE_TZ = True
 
-gettext = lambda s: s
 LANGUAGES = (
-    ('ru', gettext('Russia')),
-    ('fi', gettext('Finland')),
+    ('ru', 'Russia'),
+    ('fi', 'Finland'),
 )
 
 # Static files (CSS, JavaScript, Images)
