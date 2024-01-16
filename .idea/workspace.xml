@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dabf8d08-ac41-4fc4-8943-fe98557f0fba" name="Changes" comment="Some changes have been made" />
+    <list default="true" id="dabf8d08-ac41-4fc4-8943-fe98557f0fba" name="Changes" comment="Intermediate files">
+      <change beforePath="$PROJECT_DIR$/.idea/DinaDocProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DinaDocProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +64,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -221,14 +225,15 @@
     <MESSAGE value="Added:&#10;- send message button" />
     <MESSAGE value="Added:&#10;- 004 migrations merger" />
     <MESSAGE value="Changes:&#10;- the code from ContactPage has been replaced" />
-    <MESSAGE value="Intermediate files" />
     <MESSAGE value="." />
     <MESSAGE value="Intermediate file" />
     <MESSAGE value="Added:&#10;- html template for price page&#10;- page handler" />
     <MESSAGE value="Some changes have been made" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some changes have been made" />
+    <MESSAGE value="Intermediate files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Intermediate files" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DinaDocProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1705210053585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DinaDocProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1705404429857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DinaDocProject$DInaDocProject.coverage" NAME="DInaDocProject Coverage Results" MODIFIED="1705302949045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\lukja\PycharmProjects\DinaDocProject" />
   </component>
 </project>
