@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dabf8d08-ac41-4fc4-8943-fe98557f0fba" name="Changes" comment="Intermediate files">
-      <change afterPath="$PROJECT_DIR$/menu_pages/migrations/0006_alter_serviceblock_service_and_more.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DinaDocProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DinaDocProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_pages/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +244,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Some changes have been made" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DinaDocProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1705500294141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DinaDocProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1705503886439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DinaDocProject$DInaDocProject.coverage" NAME="DInaDocProject Coverage Results" MODIFIED="1705302949045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\lukja\PycharmProjects\DinaDocProject" />
   </component>
 </project>
