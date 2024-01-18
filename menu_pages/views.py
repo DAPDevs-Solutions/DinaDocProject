@@ -5,6 +5,7 @@ from django.urls import reverse_lazy
 from .models import Menu, ContactUs, Category
 from .forms import FeedbackForm
 
+
 menu = Menu.objects.all()
 
 
@@ -15,6 +16,7 @@ class MainPage(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['menu'] = menu
+
         return context
 
 

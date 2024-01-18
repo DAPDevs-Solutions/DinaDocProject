@@ -1,5 +1,6 @@
 from pathlib import Path
 from dotenv import load_dotenv
+from django.utils.translation import gettext_lazy as _
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,7 +24,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -95,14 +95,16 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGES = [
-    ('ru', 'Russia'),
-    ('fi', 'Finland'),
-]
-
 LANGUAGE_CODE = 'ru'
 
+LANGUAGES = [
+    ('ru', _('Russian')),
+    ('fi', _('Finnish')),
+]
 
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'menu_pages', 'locale'),
+]
 
 TIME_ZONE = 'UTC'
 
