@@ -1,8 +1,9 @@
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 
 class Menu(models.Model):
-    title = models.CharField(max_length=50)
+    title = models.CharField(max_length=50, verbose_name=_('Title'))
     url = models.CharField(max_length=100)
 
     def __str__(self):
@@ -14,9 +15,9 @@ class Menu(models.Model):
 
 
 class ContactUs(models.Model):
-    name = models.CharField(max_length=50, verbose_name='Имя')
+    name = models.CharField(max_length=50)
     email = models.EmailField()
-    message = models.TextField(verbose_name='Сообщение')
+    message = models.TextField()
 
     def __str__(self):
         return f"Сообщение {self.message} от пользователя {self.name}"

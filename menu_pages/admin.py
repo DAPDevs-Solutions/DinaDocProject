@@ -1,5 +1,5 @@
 from django.contrib import admin
-from menu_pages.models import Menu, ContactUs, Category, ServiceBlock
+from menu_pages.models import Menu, ContactUs, ServiceBlock, Category
 # from modeltranslation.admin import TranslationAdmin
 
 

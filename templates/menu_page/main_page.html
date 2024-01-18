@@ -13,8 +13,8 @@
         <section class="about-doc__section">
             <div class="about-doc container">
                 <div class="doc-info">
-                    <h1 id="doc-name">Дина Варламова</h1>
-                    <h3 id="doc-spec">Профессиональные услуги педиатра в Йоенсуу</h3>
+                    <h1 id="doc-name">{% translate 'Дина Варламова' %}</h1>
+                    <h3 id="doc-spec">{% translate 'Профессиональные услуги педиатра в Йоенсуу' %}</h3>
                 </div>
 
                 <div class="doc-photo">
@@ -25,28 +25,25 @@
 
         <section class="about-health__section">
             <div class="about-health container">
-                <h2 id="health-above">Здоровье превыше всего</h2>
+                <h2 id="health-above">{% translate 'Здоровье превыше всего' %}</h2>
                 <p id="about-clinic">
-                    Клиника Дины Варламовой занимается детскими заболеваниями и предлагает индивидуальный подход
-                    к каждому маленькому пациенту и его родителю. Здесь используются не только передовые
-                    технологии, но и создается комфортная атмосфера, в которой пациенты чувствуют себя спокойно
-                    и защищено.
+                    {% translate 'Клиника Дины Варламовой занимается детскими заболеваниями и предлагает индивидуальный подход к каждому маленькому пациенту и его родителю. Здесь используются не только передовые технологии, но и создается комфортная атмосфера, в которой пациенты чувствуют себя спокойно и защищено.' %}
                 </p>
 
                 <div class="advantages-icons">
                     <div class="individual_approach">
                         <img src="{% static 'main_page/baby_icon.svg' %}" alt="Индивидуальный подход">
-                        <p>Индивидуальный подход</p>
+                        <p>{% translate 'Индивидуальный подход' %}</p>
                     </div>
 
                     <div class="modern_equipment">
                         <img src="{% static 'main_page/duck_icon.svg' %}" alt="Оборудование">
-                        <p>Современное оборудование</p>
+                        <p>{% translate 'Современное оборудование' %}</p>
                     </div>
 
                     <div class="comfortable_atmosphere">
                         <img src="{% static 'main_page/newborn_icon.svg' %}" alt="Атмосфера">
-                        <p>Комфортная атмосфера</p>
+                        <p>{% translate 'Комфортная атмосфера' %}</p>
                     </div>
                 </div>
             </div>
@@ -55,17 +52,17 @@
         <section class="about-doc-desc__section">
             <div class="about-doc-desc container">
                 <div class="about-doc__fullinfo">
-                    <h2>О докторе</h2>
+                    <h2>{% translate 'О докторе' %}</h2>
 
-                    <p>Я практикующий врач-педиатр с большим опытом работы.</p>
+                    <p>{% translate 'Я практикующий врач-педиатр с большим опытом работы.' %}</p>
 
-                    <p>Моя главная задача – забота о здоровье ваших детей.</p>
+                    <p>{% translate 'Моя главная задача – забота о здоровье ваших детей.' %}</p>
 
                     <p>
-                        Современный подход, профессионализм и теплота в обслуживании – вот ключевые
-                        принципы, на которых строится моя работа.
+                        {% translate 'Современный подход, профессионализм и теплота в обслуживании – вот ключевые принципы, на которых строится моя работа.' %}
                     </p>
-                    <p>Откройте дверь в мир крепкого здоровья вашего малыша!</p>
+                    
+                    <p>{% translate 'Откройте дверь в мир крепкого здоровья вашего малыша!' %}</p>
                 </div>
 
                 <div class="about-doc__photo">
@@ -76,11 +73,11 @@
 
         <section class="personal-approach__section">
             <div class="personal-approach container">
-                <p>Хотите индивидуальный подход? Клиника <b>Дины Варламовой</b> к Вашим услугам!</p>
+                <p>{% translate 'Хотите индивидуальный подход? Клиника' %} <b>{% translate 'Дины Варламовой' %}</b>{% translate 'к Вашим услугам!' %}</p>
 
                 <button>
                     <img class="appointment-icon" src="{% static 'main_page/make_appointment_icon.svg' %}" alt="">
-                    Записаться на прием
+                    {% translate 'Записаться на прием' %}
                 </button>
             </div>
         </section>

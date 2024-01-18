@@ -24,6 +24,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -101,6 +102,8 @@ LANGUAGES = [
     ('ru', _('Russian')),
     ('fi', _('Finnish')),
 ]
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'ru'
 
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'menu_pages', 'locale'),

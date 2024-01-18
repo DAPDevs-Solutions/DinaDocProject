@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-18 12:06+0700\n"
+"POT-Creation-Date: 2024-01-18 22:35+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,87 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: .\DinaDocProject\settings.py:101
+
+#: .\DinaDocProject\settings.py:102
 msgid "Russian"
 msgstr ""
 
-#: .\DinaDocProject\settings.py:102
+#: .\DinaDocProject\settings.py:103
 msgid "Finnish"
 msgstr ""
 
-#: .\templates\base\base.html:57
+#: .\menu_pages\models.py:6
+msgid "Title"
+msgstr "otsikko"
+
+#: .\templates\base\base.html:54 .\templates\menu_page\main_page.html:80
 msgid "Записаться на прием"
-msgstr ""
+msgstr "Varaa aika"
+
+#: .\templates\menu_page\main_page.html:16
+msgid "Дина Варламова"
+msgstr "Dina Varlamova"
+
+#: .\templates\menu_page\main_page.html:17
+msgid "Профессиональные услуги педиатра в Йоенсуу"
+msgstr "Ammattitaitoiset lastenlääkäripalvelut Joensuussa"
+
+#: .\templates\menu_page\main_page.html:28
+msgid "Здоровье превыше всего"
+msgstr "Terveys tulee ensin"
+
+#: .\templates\menu_page\main_page.html:30
+msgid "Клиника Дины Варламовой занимается детскими заболеваниями и предлагает "
+"индивидуальный подход к каждому маленькому пациенту и его родителю. Здесь "
+"используются не только передовые технологии, но и создается комфортная "
+"атмосфера, в которой пациенты чувствуют себя спокойно и защищено."
+msgstr "Dina Varlamovan klinikka käsittelee lasten sairauksia ja tarjoaa "
+"yksilöllisen lähestymistavan jokaiselle nuorelle potilaalle ja hänen vanhemmilleen. "
+"Täällä ei käytetä vain kehittyneitä tekniikoita, vaan luodaan myös mukava ilmapiiri, "
+"jossa potilaat tuntevat olonsa rauhalliseksi ja suojatuksi."
+
+#: .\templates\menu_page\main_page.html:36
+msgid "Индивидуальный подход"
+msgstr "Yksilöllinen lähestymistapa"
+
+#: .\templates\menu_page\main_page.html:41
+msgid "Современное оборудование"
+msgstr "Nykyaikaiset laitteet"
+
+#: .\templates\menu_page\main_page.html:46
+msgid "Комфортная атмосфера"
+msgstr "Mukava ilmapiiri"
+
+#: .\templates\menu_page\main_page.html:55
+msgid "О докторе"
+msgstr "Tietoja lääkäristä"
+
+#: .\templates\menu_page\main_page.html:57
+msgid "Я практикующий врач-педиатр с большим опытом работы."
+msgstr "Olen harjoitteleva lastenlääkäri, jolla on laaja työkokemus."
+
+#: .\templates\menu_page\main_page.html:59
+msgid "Моя главная задача – забота о здоровье ваших детей."
+msgstr "Tärkein tehtäväni on huolehtia lastesi terveydestä."
+
+#: .\templates\menu_page\main_page.html:62
+msgid ""
+"Современный подход, профессионализм и теплота в обслуживании – вот ключевые "
+"принципы, на которых строится моя работа."
+msgstr "Moderni lähestymistapa, ammattitaito ja lämmin palvelu ovat keskeisiä periaatteita, joihin työni perustuu."
+
+#: .\templates\menu_page\main_page.html:65
+msgid "Откройте дверь в мир крепкого здоровья вашего малыша!"
+msgstr "Avaa ovi vauvallesi hyvän terveyden maailmaan!"
+
+#: .\templates\menu_page\main_page.html:76
+msgid "Хотите индивидуальный подход? Клиника"
+msgstr "Kun haluat yksilöllistä hoitoa,"
+
+#: .\templates\menu_page\main_page.html:76
+msgid "Дины Варламовой"
+msgstr "Dina Varlamova"
+
+#: .\templates\menu_page\main_page.html:76
+msgid "к Вашим услугам!"
+msgstr "klinikka on sinua varten"
