@@ -9,6 +9,11 @@
     <link rel="icon" type="image/x-con" href="{% static 'base/images/favicon.ico' %}">
     <title>{% block title %}{% endblock %}</title>
     {% block css %} {% endblock %}
+
+    {% get_current_language as current_language %}
+    {% get_available_languages as available_languages %}
+    {% get_language_info_list for available_languages as languages %}
+
 </head>
 <body>
     <header>
@@ -29,26 +34,30 @@
                     
                     <div class="lang_block">
                         <img src="{% static 'base/images/lang_globus.svg' %}" alt="Глобус">
-                        <img src="{% static 'base/images/language.svg' %}" alt="Текущий язык">
+                                        
+                        {% if current_language == 'ru' %}
+                            <img src="{% static 'base/images/ru_lang.svg' %}" alt="Русский язык">
+                        {% else %}
+                            <img src="{% static 'base/images/fi_lang.svg' %}" alt="Suomen kieli">
+                        {% endif %}
+                    
                         <img src="{% static 'base/images/switch_lang.svg' %}" alt="Переключение языка">
-                        <ul class="dropdown-langmenu" aria-labelledby="navbarDropdown">
-{#                            <img src="{% static 'base/images/switch_lang.svg' %}" alt="Переключение языка">#}
-                           
-                            <form action="{% url 'set_language' %}" method="post">
-                                {% csrf_token %}
-                                <input name="next" type="hidden" value="{{ redirect_to }}">
-                                <select name="language" id="language-selector" onchange="this.form.submit()">
-                                    {% get_current_language as current_language %}
-                                    {% get_available_languages as available_languages %}
-                                    {% get_language_info_list for available_languages as languages %}
-                                    {% for language in languages %}
-                                        <option value="{{ language.code }}" {% if language.code == current_language %}selected{% endif %}>
-                                            {{ language.name_local }}
-                                        </option>
-                                    {% endfor %}
-                                </select>
-                            </form>
-                        </ul>
+                        <div class="dropdown__langmenu">
+
+                            <ul class="langmenu" aria-labelledby="navbarDropdown">
+                                <form action="{% url 'set_language' %}" method="post">
+                                    {% csrf_token %}
+                                    <input name="next" type="hidden" value="{{ redirect_to }}">
+                                    <select name="language" id="language-selector" onchange="this.form.submit()">
+                                        {% for language in languages %}
+                                            <option value="{{ language.code }}" {% if language.code == current_language %}selected{% endif %}>
+                                                {{ language.name_local }}
+                                            </option>
+                                        {% endfor %}
+                                    </select>
+                                </form>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 

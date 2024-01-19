@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-18 22:35+0700\n"
+"POT-Creation-Date: 2024-01-19 23:47+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,10 +26,17 @@ msgstr ""
 msgid "Finnish"
 msgstr ""
 
-
-#: .\templates\base\base.html:54 .\templates\menu_page\main_page.html:80
+#: .\templates\base\base.html:63 .\templates\menu_page\main_page.html:80
 msgid "Записаться на прием"
 msgstr "Varaa aika"
+
+#: .\templates\contact_page\contact_page.html:9
+msgid "Контакты"
+msgstr "Yhteystiedot"
+
+#: .\templates\menu_page\main_page.html:9
+msgid "Главная"
+msgstr "Etusivu"
 
 #: .\templates\menu_page\main_page.html:16
 msgid "Дина Варламова"
@@ -44,14 +51,17 @@ msgid "Здоровье превыше всего"
 msgstr "Terveys tulee ensin"
 
 #: .\templates\menu_page\main_page.html:30
-msgid "Клиника Дины Варламовой занимается детскими заболеваниями и предлагает "
+msgid ""
+"Клиника Дины Варламовой занимается детскими заболеваниями и предлагает "
 "индивидуальный подход к каждому маленькому пациенту и его родителю. Здесь "
 "используются не только передовые технологии, но и создается комфортная "
 "атмосфера, в которой пациенты чувствуют себя спокойно и защищено."
-msgstr "Dina Varlamovan klinikka käsittelee lasten sairauksia ja tarjoaa "
-"yksilöllisen lähestymistavan jokaiselle nuorelle potilaalle ja hänen vanhemmilleen. "
-"Täällä ei käytetä vain kehittyneitä tekniikoita, vaan luodaan myös mukava ilmapiiri, "
-"jossa potilaat tuntevat olonsa rauhalliseksi ja suojatuksi."
+msgstr ""
+"Dina Varlamovan klinikka käsittelee lasten sairauksia ja tarjoaa "
+"yksilöllisen lähestymistavan jokaiselle nuorelle potilaalle ja hänen "
+"vanhemmilleen. Täällä ei käytetä vain kehittyneitä tekniikoita, vaan luodaan "
+"myös mukava ilmapiiri, jossa potilaat tuntevat olonsa rauhalliseksi ja "
+"suojatuksi."
 
 #: .\templates\menu_page\main_page.html:36
 msgid "Индивидуальный подход"
@@ -81,7 +91,9 @@ msgstr "Tärkein tehtäväni on huolehtia lastesi terveydestä."
 msgid ""
 "Современный подход, профессионализм и теплота в обслуживании – вот ключевые "
 "принципы, на которых строится моя работа."
-msgstr "Moderni lähestymistapa, ammattitaito ja lämmin palvelu ovat keskeisiä periaatteita, joihin työni perustuu."
+msgstr ""
+"Moderni lähestymistapa, ammattitaito ja lämmin palvelu ovat keskeisiä "
+"periaatteita, joihin työni perustuu."
 
 #: .\templates\menu_page\main_page.html:65
 msgid "Откройте дверь в мир крепкого здоровья вашего малыша!"
@@ -98,3 +110,12 @@ msgstr "Dina Varlamova"
 #: .\templates\menu_page\main_page.html:76
 msgid "к Вашим услугам!"
 msgstr "klinikka on sinua varten"
+
+#: .\templates\price_page\price_page.html:9
+#: .\templates\services_page\services_page.html:9
+msgid "Цены"
+msgstr "Hinnat"
+
+#: .\templates\services_page\services_page.html:15
+msgid "Услуги"
+msgstr "Palvelu"

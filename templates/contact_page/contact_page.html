@@ -1,11 +1,12 @@
 {% extends 'base/base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/contact_page.css' %}">
 {% endblock %}
 
-<title>{% block title %}Контакты{% endblock %}</title>
+<title>{% block title %}{% translate 'Контакты' %}{% endblock %}</title>
 
 {% block content %}
     <main>

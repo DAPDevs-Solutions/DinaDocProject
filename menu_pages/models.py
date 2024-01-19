@@ -1,9 +1,9 @@
 from django.db import models
-from django.utils.translation import gettext_lazy as _
+# from django.utils.translation import gettext_lazy as _
 
 
 class Menu(models.Model):
-    title = models.CharField(max_length=50, verbose_name=_('Title'))
+    title = models.CharField(max_length=50, verbose_name='Title')
     url = models.CharField(max_length=100)
 
     def __str__(self):
