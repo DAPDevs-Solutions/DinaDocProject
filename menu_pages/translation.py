@@ -4,7 +4,7 @@ from .models import Menu, ContactUs, Category, ServiceBlock
 
 @register(Menu)
 class MenuTranslationsOptions(TranslationOptions):
-    fields = ('title', 'url')
+    fields = ('title', )
 
 
 # translator.register(Menu, MenuTranslationsOptions)

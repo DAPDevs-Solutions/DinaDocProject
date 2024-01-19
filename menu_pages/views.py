@@ -1,9 +1,11 @@
 from django.views.generic.edit import CreateView
 from django.views.generic import TemplateView
 from django.shortcuts import render, redirect
-from django.urls import reverse_lazy
+from django.utils.translation import activate
+from django.urls import reverse_lazy, reverse
 from .models import Menu, ContactUs, Category
 from .forms import FeedbackForm
+from DinaDocProject import settings
 
 
 menu = Menu.objects.all()

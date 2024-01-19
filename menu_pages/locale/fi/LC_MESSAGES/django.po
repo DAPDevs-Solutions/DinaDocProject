@@ -26,9 +26,6 @@ msgstr ""
 msgid "Finnish"
 msgstr ""
 
-#: .\menu_pages\models.py:6
-msgid "Title"
-msgstr "otsikko"
 
 #: .\templates\base\base.html:54 .\templates\menu_page\main_page.html:80
 msgid "Записаться на прием"
