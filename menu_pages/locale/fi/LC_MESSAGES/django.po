@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 23:47+0700\n"
+"POT-Creation-Date: 2024-01-20 13:27+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,13 +26,54 @@ msgstr ""
 msgid "Finnish"
 msgstr ""
 
-#: .\templates\base\base.html:63 .\templates\menu_page\main_page.html:80
+#: .\menu_pages\forms.py:7
+msgid "Name"
+msgstr "Nimi"
+
+#: .\menu_pages\forms.py:8
+msgid "Email"
+msgstr "Email"
+
+#: .\menu_pages\forms.py:9
+msgid "Message"
+msgstr "Viesti"
+
+#: .\templates\base\base.html:67 .\templates\menu_page\main_page.html:80
 msgid "Записаться на прием"
 msgstr "Varaa aika"
 
 #: .\templates\contact_page\contact_page.html:9
 msgid "Контакты"
 msgstr "Yhteystiedot"
+
+#: .\templates\contact_page\contact_page.html:16
+msgid "СВЯЖИТЕСЬ С НАМИ"
+msgstr "Ota yhteyttä"
+
+#: .\templates\contact_page\contact_page.html:19
+msgid "Часы работы"
+msgstr "Aukioloajat"
+
+#: .\templates\contact_page\contact_page.html:21
+msgid "пн-пт"
+msgstr "ma-pe klo"
+
+#: .\templates\contact_page\contact_page.html:22
+msgid "сб"
+msgstr "la klo"
+
+#: .\templates\contact_page\contact_page.html:53
+msgid "Отправьте нам сообщение"
+msgstr "Jätä meille viesti"
+
+#: .\templates\contact_page\contact_page.html:55
+msgid "Не стесняйтесь написать нам. Мы ответим вам как можно скорее."
+msgstr ""
+"Ota rohkeasti yhteyttä, niin otamme sinuun yhteyttä mahdollisimman pian."
+
+#: .\templates\contact_page\contact_page.html:74
+msgid "Отправить сообщение"
+msgstr "Lähetä viesti"
 
 #: .\templates\menu_page\main_page.html:9
 msgid "Главная"
@@ -112,10 +153,10 @@ msgid "к Вашим услугам!"
 msgstr "klinikka on sinua varten"
 
 #: .\templates\price_page\price_page.html:9
-#: .\templates\services_page\services_page.html:9
 msgid "Цены"
 msgstr "Hinnat"
 
+#: .\templates\services_page\services_page.html:9
 #: .\templates\services_page\services_page.html:15
 msgid "Услуги"
 msgstr "Palvelu"

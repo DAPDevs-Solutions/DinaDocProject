@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dabf8d08-ac41-4fc4-8943-fe98557f0fba" name="Changes" comment="Added:&#10;- function of switching language">
+    <list default="true" id="dabf8d08-ac41-4fc4-8943-fe98557f0fba" name="Changes" comment="Update:&#10;- redesign switching language">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu_pages/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu_pages/locale/fi/LC_MESSAGES/django.mo" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/locale/fi/LC_MESSAGES/django.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu_pages/locale/fi/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/locale/fi/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu_pages/translation.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/translation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact_page/contact_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact_page/contact_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,34 +51,34 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Django Server.DinaDocProject.executor&quot;: &quot;Run&quot;,
-    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;adding__multilanguage&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lukja/Desktop/menu_pages_category.csv&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.DinaDocProject.executor": "Run",
+    "Python.manage.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "django.template.preview.state": "SHOW_EDITOR",
+    "git-widget-placeholder": "adding__multilanguage",
+    "last_opened_file_path": "C:/Users/lukja/Desktop/menu_pages_category.csv",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lukja\PycharmProjects\DinaDocProject\menu_pages\static\main_page" />
@@ -146,6 +151,8 @@
       <workItem from="1705658124771" duration="6331000" />
       <workItem from="1705678242742" duration="130000" />
       <workItem from="1705678375764" duration="95000" />
+      <workItem from="1705678473796" duration="5248000" />
+      <workItem from="1705728546044" duration="3931000" />
     </task>
     <task id="LOCAL-00001" summary="Added:&#10;- favicon.ico for website icon&#10;&#10;Update: changed text in 'about doc' section">
       <option name="closed" value="true" />
@@ -251,7 +258,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705677995477</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="workspace.xml">
+      <option name="closed" value="true" />
+      <created>1705679232212</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705679232212</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update:&#10;- redesign switching language">
+      <option name="closed" value="true" />
+      <created>1705684277813</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1705684277813</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,10 +318,12 @@
     <MESSAGE value="workspace.xml file" />
     <MESSAGE value="Added:&#10;- translate for header menu&#10;- modeltranslation library&#10;&#10;Update:&#10;- translated main page" />
     <MESSAGE value="Added:&#10;- function of switching language" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added:&#10;- function of switching language" />
+    <MESSAGE value="workspace.xml" />
+    <MESSAGE value="Update:&#10;- redesign switching language" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update:&#10;- redesign switching language" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DinaDocProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1705678395299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DinaDocProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1705731114431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DinaDocProject$DInaDocProject.coverage" NAME="DInaDocProject Coverage Results" MODIFIED="1705302949045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\lukja\PycharmProjects\DinaDocProject" />
   </component>
 </project>
