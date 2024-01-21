@@ -1,0 +1,78 @@
+.prices {
+    margin-bottom: 50px;
+}
+
+.prices h2 {
+    text-align: center;
+    font-weight: 400;
+    padding: 50px 0;
+    text-transform: uppercase;
+}
+
+.prices-table {
+    margin-bottom: 65px;
+}
+
+
+.appointment-prices {
+    margin-bottom: 40px;
+}
+
+
+.appointment-table {
+    margin-bottom: 30px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #3B485B;
+}
+
+.title__data {
+    padding-left: 20px;
+    width: 960px;
+}
+
+.price__data {
+    min-width: 130px;
+}
+
+.table_row {
+    height: 40px;
+    border-bottom: 1px solid #794A83;
+}
+
+.appointment-prices p {
+    font-weight: 300;
+    color: #3B485B;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.prescription-table {
+    margin-top: 20px;
+}
+
+.make-appointment-button button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0;
+    border-radius: 30px;
+    background-color: #794a83;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.make-appointment-span {
+    padding-right: 5px;
+}
+
+.make-appointment-btn:hover {
+    transition: all 0.5s;
+    background-color: #602a6e;
+}

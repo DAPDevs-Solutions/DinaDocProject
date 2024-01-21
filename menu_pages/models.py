@@ -48,3 +48,16 @@ class ServiceBlock(models.Model):
     class Meta:
         verbose_name = 'Service'
         verbose_name_plural = 'Services'
+
+
+class Price(models.Model):
+    title = models.CharField(max_length=100)
+    price = models.IntegerField()
+    category = models.CharField(max_length=50)
+
+    def __str__(self):
+        return f'Service - {self.title} costs {self.price}'
+
+    class Meta:
+        verbose_name = 'Price'
+        verbose_name_plural = 'Prices'
