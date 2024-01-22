@@ -9,7 +9,7 @@ class FeedbackForm(forms.ModelForm):
         model = ContactUs
         fields = ['name', 'email', 'message']
         labels = {
-            'name':  'Имя',
-            'email': 'Email',
-            'message': 'Сообщение'
+            'name':  _('Имя'),
+            'email': _('Email'),
+            'message': _('Сообщение')
         }
