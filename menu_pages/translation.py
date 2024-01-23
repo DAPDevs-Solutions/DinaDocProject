@@ -9,9 +9,9 @@ class MenuTranslationsOptions(TranslationOptions):
 
 # translator.register(Menu, MenuTranslationsOptions)
 
-# @register(ContactUs)
-# class ContactUsTranslationsOptions(TranslationOptions):
-#     fields = ('name', 'email', 'message')
+@register(ContactUs)
+class ContactUsTranslationsOptions(TranslationOptions):
+    fields = ('name', 'email', 'message')
 
 
 # translator.register(ContactUs, ContactUsTranslationsOptions)

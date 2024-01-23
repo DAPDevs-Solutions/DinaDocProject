@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dabf8d08-ac41-4fc4-8943-fe98557f0fba" name="Changes" comment="Added:&#10;- prices model&#10;- prices markup &#10;- prices stylesheet&#10;- header &amp; footer border&#10;Updated:&#10;- footer position&#10;- footer padding&#10;- appointment icon path">
-      <change beforePath="$PROJECT_DIR$/.idea/DinaDocProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DinaDocProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_pages/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_pages/locale/fi/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/locale/fi/LC_MESSAGES/django.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_pages/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_pages/static/css/contact_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/static/css/contact_page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_pages/static/css/price_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/static/css/price_page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu_pages/translation.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/translation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact_page/contact_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact_page/contact_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/menu_page/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu_page/main_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/price_page/price_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/price_page/price_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +89,7 @@
   <component name="RunManager">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DinaDocProject" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
