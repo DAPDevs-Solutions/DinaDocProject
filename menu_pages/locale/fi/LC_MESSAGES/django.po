@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-21 13:45+0700\n"
+"POT-Creation-Date: 2024-01-23 21:24+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 # ГЛАВНАЯ СТРАНИЦА/MAIN PAGE
-
 #: .\DinaDocProject\settings.py:102
 msgid "Russian"
 msgstr ""
@@ -27,6 +26,65 @@ msgstr ""
 #: .\DinaDocProject\settings.py:103
 msgid "Finnish"
 msgstr ""
+
+# ФОРМЫ / FORMS
+#: .\menu_pages\forms.py:12
+msgid "Имя"
+msgstr "Nimi"
+
+#: .\menu_pages\forms.py:13
+msgid "Email"
+msgstr "Email"
+
+#: .\menu_pages\forms.py:14
+msgid "Сообщение"
+msgstr "Viesti"
+
+#: .\templates\base\base.html:67 .\templates\menu_page\main_page.html:80
+msgid "Записаться на прием"
+msgstr "Varaa aika"
+
+#: .\templates\base\base.html:96
+msgid "Возможен прием в вечернее время и в выходные дни"
+msgstr "Myös ilta- ja viikonloppuaikoja"
+
+#: .\templates\base\base.html:101
+msgid "Есть онлайн запись на прием"
+msgstr "Ajanvaraus myös netissä"
+
+#: .\templates\contact_page\contact_page.html:9
+msgid "Контакты"
+msgstr "Yhteystiedot"
+
+# КОНТАКТЫ / CONTACTS
+#: .\templates\contact_page\contact_page.html:16
+msgid "СВЯЖИТЕСЬ С НАМИ"
+msgstr "Ota yhteyttä"
+
+#: .\templates\contact_page\contact_page.html:19
+msgid "Часы работы"
+msgstr "Aukioloajat"
+
+#: .\templates\contact_page\contact_page.html:21
+msgid "пн-пт"
+msgstr "ma-pe klo"
+
+#: .\templates\contact_page\contact_page.html:22
+msgid "сб"
+msgstr "la klo"
+
+#: .\templates\contact_page\contact_page.html:53
+msgid "Отправьте нам сообщение"
+msgstr "Jätä meille viesti"
+
+#: .\templates\contact_page\contact_page.html:55
+msgid "Не стесняйтесь написать нам. Мы ответим вам как можно скорее."
+msgstr ""
+"Ota rohkeasti yhteyttä, niin otamme sinuun yhteyttä mahdollisimman pian."
+
+#: .\templates\contact_page\contact_page.html:75
+msgid "Отправить сообщение"
+msgstr "Lähetä viesti"
 
 #: .\templates\menu_page\main_page.html:9
 msgid "Главная"
@@ -45,11 +103,13 @@ msgid "Здоровье превыше всего"
 msgstr "Terveys tulee ensin"
 
 #: .\templates\menu_page\main_page.html:30
-msgid "Клиника Дины Варламовой занимается детскими заболеваниями и предлагает "
+msgid ""
+"Клиника Дины Варламовой занимается детскими заболеваниями и предлагает "
 "индивидуальный подход к каждому маленькому пациенту и его родителю. Здесь "
 "используются не только передовые технологии, но и создается комфортная "
 "атмосфера, в которой пациенты чувствуют себя спокойно и защищено."
-msgstr "Dina Varlamovan klinikka käsittelee lasten sairauksia ja tarjoaa "
+msgstr ""
+"Dina Varlamovan klinikka käsittelee lasten sairauksia ja tarjoaa "
 "yksilöllisen lähestymistavan jokaiselle nuorelle potilaalle ja hänen "
 "vanhemmilleen. Täällä ei käytetä vain kehittyneitä tekniikoita, vaan luodaan "
 "myös mukava ilmapiiri, jossa potilaat tuntevat olonsa rauhalliseksi ja "
@@ -103,92 +163,21 @@ msgstr "Dina Varlamova"
 msgid "к Вашим услугам!"
 msgstr "klinikka on sinua varten"
 
-#: .\templates\base\base.html:96
-msgid "Возможен прием в вечернее время и в выходные дни"
-msgstr "Myös ilta- ja viikonloppuaikoja"
-
-#: .\templates\base\base.html:101
-msgid "Есть онлайн запись на прием"
-msgstr "Ajanvaraus myös netissä"
-
-
-
-
-# КОНТАКТЫ / CONTACTS
-#: .\templates\contact_page\contact_page.html:16
-msgid "СВЯЖИТЕСЬ С НАМИ"
-msgstr "Ota yhteyttä"
-
-#: .\templates\contact_page\contact_page.html:19
-msgid "Часы работы"
-msgstr "Aukioloajat"
-
-#: .\templates\contact_page\contact_page.html:21
-msgid "пн-пт"
-msgstr "ma-pe klo"
-
-#: .\templates\contact_page\contact_page.html:22
-msgid "сб"
-msgstr "la klo"
-
-#: .\templates\contact_page\contact_page.html:53
-msgid "Отправьте нам сообщение"
-msgstr "Jätä meille viesti"
-
-#: .\templates\contact_page\contact_page.html:55
-msgid "Не стесняйтесь написать нам. Мы ответим вам как можно скорее."
-msgstr ""
-"Ota rohkeasti yhteyttä, niin otamme sinuun yhteyttä mahdollisimman pian."
-
-#: .\templates\contact_page\contact_page.html:75
-msgid "Отправить сообщение"
-msgstr "Lähetä viesti"
-
-
-
-
-# ФОРМЫ / FORMS
-
-#: .\menu_pages\forms.py:12
-msgid "Имя"
-msgstr "Nimi"
-
-#: .\menu_pages\forms.py:13
-msgid "Email"
-msgstr "Email"
-
-#: .\menu_pages\forms.py:14
-msgid "Сообщение"
-msgstr "Viesti"
-
-#: .\templates\base\base.html:67 .\templates\menu_page\main_page.html:80
-msgid "Записаться на прием"
-msgstr "Varaa aika"
-
-
-
-
-
-#: .\templates\contact_page\contact_page.html:9
-msgid "Контакты"
-msgstr "Yhteystiedot"
-
-
-#: .\templates\services_page\services_page.html:9
-#: .\templates\services_page\services_page.html:15
-msgid "Услуги"
-msgstr "Palvelut"
-
-
 #: .\templates\price_page\price_page.html:15
 msgid "Цены"
 msgstr "Hinnat"
 
-
 #: .\templates\price_page\price_page.html:34
-msgid "В стоимость посещения входит плата за офисные услуги в размере 33,90 евро и плата за хранение данных в электронном архиве (Kanta.fi) в размере 2,90 евро за посещение. В будние дни после 19:00 и в выходные дни цены повышаются. Цены не учитывают возможную компенсацию Kela."
-msgstr "Vastaanottokäynnin hintaan sisältyy palvelumaksu 33,90 euroa (sarjakäynneissä 9,90 euroa/käyntikerta) ja Kanta-maksu 2,90 euroa/käynti. Arki-iltaisin klo 21 jälkeen ja viikonloppuina hinnat ovat korotetut. Hinnoissa ei ole huomioitu mahdollista Kela-korvausta."
-
+msgid ""
+"В стоимость посещения входит плата за офисные услуги в размере 33,90 евро и "
+"плата за хранение данных в электронном архиве (Kanta.fi) в размере 2,90 евро "
+"за посещение. В будние дни после 19:00 и в выходные дни цены повышаются. "
+"Цены не учитывают возможную компенсацию Kela."
+msgstr ""
+"Vastaanottokäynnin hintaan sisältyy palvelumaksu 33,90 euroa "
+"(sarjakäynneissä 9,90 euroa/käyntikerta) ja Kanta-maksu 2,90 euroa/käynti. "
+"Arki-iltaisin klo 21 jälkeen ja viikonloppuina hinnat ovat korotetut. "
+"Hinnoissa ei ole huomioitu mahdollista Kela-korvausta."
 
 #: .\templates\price_page\price_page.html:37
 msgid "Рецепты"
@@ -201,3 +190,8 @@ msgstr "kpl"
 #: .\templates\price_page\price_page.html:58
 msgid "Найти свободное время"
 msgstr "Näytä vapaat ajat"
+
+#: .\templates\services_page\services_page.html:9
+#: .\templates\services_page\services_page.html:15
+msgid "Услуги"
+msgstr "Palvelut"
