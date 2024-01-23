@@ -1,5 +1,5 @@
 from modeltranslation.translator import register, translator, TranslationOptions
-from .models import Menu, ContactUs, Category, ServiceBlock
+from .models import Menu, ContactUs, Category, ServiceBlock, Price
 
 
 @register(Menu)
@@ -31,3 +31,7 @@ class ServiceBlockTranslationsOptions(TranslationOptions):
 
 
 # translator.register(ServiceBlock, ServiceBlockTranslationsOptions)
+
+@register(Price)
+class PriceTranslationsOptions(TranslationOptions):
+    fields = ('title',)

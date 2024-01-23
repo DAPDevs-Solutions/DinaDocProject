@@ -60,19 +60,12 @@
     align-items: center;
     border: 0;
     border-radius: 30px;
-    background-color: #794a83;
     color: white;
     padding: 10px 20px;
     margin: 0 auto;
     box-sizing: border-box;
-    cursor: pointer;
 }
 
 .make-appointment-span {
     padding-right: 5px;
-}
-
-.make-appointment-btn:hover {
-    transition: all 0.5s;
-    background-color: #602a6e;
 }

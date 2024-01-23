@@ -37,7 +37,7 @@ msgid "Дина Варламова"
 msgstr "Dina Varlamova"
 
 #: .\templates\menu_page\main_page.html:17
-msgid "Профессиональные услуги педиатра в Йоенсуу"
+msgid "Профессиональные услуги педиатра в Йоэнсуу"
 msgstr "Ammattitaitoiset lastenlääkäripalvelut Joensuussa"
 
 #: .\templates\menu_page\main_page.html:28
@@ -177,4 +177,27 @@ msgstr "Yhteystiedot"
 #: .\templates\services_page\services_page.html:9
 #: .\templates\services_page\services_page.html:15
 msgid "Услуги"
-msgstr "Palvelu"
+msgstr "Palvelut"
+
+
+#: .\templates\price_page\price_page.html:15
+msgid "Цены"
+msgstr "Hinnat"
+
+
+#: .\templates\price_page\price_page.html:34
+msgid "В стоимость посещения входит плата за офисные услуги в размере 33,90 евро и плата за хранение данных в электронном архиве (Kanta.fi) в размере 2,90 евро за посещение. В будние дни после 19:00 и в выходные дни цены повышаются. Цены не учитывают возможную компенсацию Kela."
+msgstr "Vastaanottokäynnin hintaan sisältyy palvelumaksu 33,90 euroa (sarjakäynneissä 9,90 euroa/käyntikerta) ja Kanta-maksu 2,90 euroa/käynti. Arki-iltaisin klo 21 jälkeen ja viikonloppuina hinnat ovat korotetut. Hinnoissa ei ole huomioitu mahdollista Kela-korvausta."
+
+
+#: .\templates\price_page\price_page.html:37
+msgid "Рецепты"
+msgstr "Reseptit"
+
+#: .\templates\price_page\price_page.html:49
+msgid "шт"
+msgstr "kpl"
+
+#: .\templates\price_page\price_page.html:58
+msgid "Найти свободное время"
+msgstr "Näytä vapaat ajat"

@@ -1,5 +1,6 @@
 {% extends 'base/base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/price_page.css' %}">
@@ -11,7 +12,7 @@
     <main>
         <section class="prices__section">
             <div class="prices container">
-                <h2>Цены</h2>
+                <h2>{% translate 'Цены' %}</h2>
                 <div class="prices-table">
                     <div class="appointment-prices">
                         <table class="appointment-table table">
@@ -30,12 +31,10 @@
                             {% endfor %}
                             </tbody>
                         </table>
-                        <p>В стоимость посещения входит плата за офисные услуги в размере 33,90 евро и плата за хранение
-                            данных в электронном архиве (Kanta.fi) в размере 2,90 евро за посещение. В будние дни после
-                            19:00 и в выходные дни цены повышаются. Цены не учитывают возможную компенсацию Kela.</p>
+                        <p>{% translate 'В стоимость посещения входит плата за офисные услуги в размере 33,90 евро и плата за хранение данных в электронном архиве (Kanta.fi) в размере 2,90 евро за посещение. В будние дни после 19:00 и в выходные дни цены повышаются. Цены не учитывают возможную компенсацию Kela.' %}</p>
                     </div>
                     <div class="prescription-prices">
-                        <h3>Рецепты</h3>
+                        <h3>{% translate 'Рецепты' %}</h3>
                         <table class="prescription-table table">
                             <thead>
                             <tr>
@@ -47,7 +46,7 @@
                             {% for price in prescription_prices %}
                                 <tr class="prescription__table_row table_row">
                                     <td class="title__data">{{ price.title }}</td>
-                                    <td class="price__data">{{ price.price }} €</td>
+                                    <td class="price__data">{{ price.price }} € / {% translate 'шт' %}.</td>
                                 </tr>
                             {% endfor %}
                             </tbody>
@@ -56,7 +55,7 @@
                 </div>
                 <div class="make-appointment-button">
                     <button class="btn make-appointment-btn">
-                        <span class="make-appointment-span">Найти свободное время</span>
+                        <span class="make-appointment-span">{% translate 'Найти свободное время' %}</span>
                         <img src="{% static 'main_page/arrow.svg' %}" alt="Arrow">
                     </button>
                 </div>

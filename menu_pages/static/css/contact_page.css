@@ -24,7 +24,7 @@ h1, h2, h3, p {
 
 .contact-us {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 50px;
 }
 
@@ -36,6 +36,7 @@ h1, h2, h3, p {
 
 .contact-us__info h2 {
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .work-hours h3 {
