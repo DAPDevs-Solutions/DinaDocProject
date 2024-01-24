@@ -173,6 +173,27 @@ footer {
     margin-bottom: 10px;
 }
 
+.doc-email {
+    text-decoration: none;
+    color: #3b485b;
+    cursor: pointer;
+}
+
+.doc-email:hover {
+    text-decoration: underline;
+}
+
+.doc-phonenumber {
+    text-decoration: none;
+    color: #3b485b;
+    cursor: pointer;
+}
+
+.doc-phonenumber:hover {
+    text-decoration: underline;
+}
+
+
 /* button styles */
 .btn {
     background: #794a83;
