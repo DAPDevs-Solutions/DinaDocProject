@@ -72,6 +72,26 @@ h1, h2, h3, p {
     font-weight: 300;
 }
 
+.phone #doc-phone {
+    text-decoration: none;
+    color: #3b485b;
+    cursor: pointer;
+}
+
+.phone #doc-phone:hover {
+    text-decoration: underline;
+}
+
+.email #doc-email {
+    text-decoration: none;
+    color: #3b485b;
+    cursor: pointer;
+}
+
+.email #doc-email:hover {
+    text-decoration: underline;
+}
+
 .contact-us__form {
     border: 2px solid #794A83;
     padding: 45px 55px 45px 55px;
