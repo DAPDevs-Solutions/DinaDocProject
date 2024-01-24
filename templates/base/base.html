@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+{% load i18n %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +9,11 @@
     <link rel="icon" type="image/x-con" href="{% static 'base/images/favicon.ico' %}">
     <title>{% block title %}{% endblock %}</title>
     {% block css %} {% endblock %}
+
+    {% get_current_language as current_language %}
+    {% get_available_languages as available_languages %}
+    {% get_language_info_list for available_languages as languages %}
+
 </head>
 <body>
     <header>
@@ -28,15 +34,37 @@
                     
                     <div class="lang_block">
                         <img src="{% static 'base/images/lang_globus.svg' %}" alt="Глобус">
-                        <img src="{% static 'base/images/language.svg' %}" alt="Текущий язык">
+                                        
+                        {% if current_language == 'ru' %}
+                            <img src="{% static 'base/images/ru_lang.svg' %}" alt="Русский язык">
+                        {% else %}
+                            <img src="{% static 'base/images/fi_lang.svg' %}" alt="Suomen kieli">
+                        {% endif %}
+                    
                         <img src="{% static 'base/images/switch_lang.svg' %}" alt="Переключение языка">
+                        <div class="dropdown__langmenu">
+
+                            <ul class="langmenu" aria-labelledby="navbarDropdown">
+                                <form action="{% url 'set_language' %}" method="post">
+                                    {% csrf_token %}
+                                    <input name="next" type="hidden" value="{{ redirect_to }}">
+                                    <select name="language" id="language-selector" onchange="this.form.submit()">
+                                        {% for language in languages %}
+                                            <option value="{{ language.code }}" {% if language.code == current_language %}selected{% endif %}>
+                                                {{ language.name_local }}
+                                            </option>
+                                        {% endfor %}
+                                    </select>
+                                </form>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <div class="nav_list--make_appointment">
-                    <button>
+                    <button class="btn nav_list--button">
                         <img class="appointment-icon" src="{% static 'base/images/make_appointment_icon.svg' %}" alt="Иконка записи на прием">
-                        Записаться на прием
+                        {% translate 'Записаться на прием' %}
                     </button>
                 </div>
             </div>
@@ -64,13 +92,13 @@
             </div>
 
             <div class="footer__wrapper--contact_mail footer-align-center">
-                <h3 id="email">dinavarlamova@gmail.fi</h3>
-                <p>Возможен прием в вечернее время и в выходные дни</p>
+                <h3 id="email"><a href="mailto: dinavarlamova@gmail.fi" class="doc-email">dinavarlamova@gmail.fi</a></h3>
+                <p> {% translate 'Возможен прием в вечернее время и в выходные дни' %} </p>
             </div>
 
             <div class="footer_wrapper--contact_phone footer-align-center">
-                <h3 id="phone-number">040 000 0000</h3>
-                <p>Есть онлайн запись на прием</p>
+                <h3 id="phone-number"><a href="tel:+040 000 0000" class="doc-phonenumber">040 000 0000</a></h3>
+                <p>{% translate 'Есть онлайн запись на прием' %}</p>
             </div>
         </div>
     </footer>

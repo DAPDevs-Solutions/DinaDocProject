@@ -1,5 +1,6 @@
 from django.urls import path
 from .views import MainPage, ContactPage, ServicesPage, PricePage
+from django.conf.urls.i18n import i18n_patterns
 
 urlpatterns = [
     # main page
@@ -14,3 +15,4 @@ urlpatterns = [
     # price page
     path('price/', PricePage.as_view(), name='price_page')
 ]
+

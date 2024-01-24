@@ -1,7 +1,8 @@
 .services h2 {
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
-    padding: 20px 0 70px;
+    padding: 50px 0;
+    text-transform: uppercase;
 }
 
 .services-blocks {

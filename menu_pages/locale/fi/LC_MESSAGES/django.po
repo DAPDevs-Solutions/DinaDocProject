@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-23 21:24+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# ГЛАВНАЯ СТРАНИЦА/MAIN PAGE
+#: .\DinaDocProject\settings.py:102
+msgid "Russian"
+msgstr ""
+
+#: .\DinaDocProject\settings.py:103
+msgid "Finnish"
+msgstr ""
+
+# ФОРМЫ / FORMS
+#: .\menu_pages\forms.py:12
+msgid "Имя"
+msgstr "Nimi"
+
+#: .\menu_pages\forms.py:13
+msgid "Email"
+msgstr "Email"
+
+#: .\menu_pages\forms.py:14
+msgid "Сообщение"
+msgstr "Viesti"
+
+#: .\templates\base\base.html:67 .\templates\menu_page\main_page.html:80
+msgid "Записаться на прием"
+msgstr "Varaa aika"
+
+#: .\templates\base\base.html:96
+msgid "Возможен прием в вечернее время и в выходные дни"
+msgstr "Myös ilta- ja viikonloppuaikoja"
+
+#: .\templates\base\base.html:101
+msgid "Есть онлайн запись на прием"
+msgstr "Ajanvaraus myös netissä"
+
+#: .\templates\contact_page\contact_page.html:9
+msgid "Контакты"
+msgstr "Yhteystiedot"
+
+# КОНТАКТЫ / CONTACTS
+#: .\templates\contact_page\contact_page.html:16
+msgid "СВЯЖИТЕСЬ С НАМИ"
+msgstr "Ota yhteyttä"
+
+#: .\templates\contact_page\contact_page.html:19
+msgid "Часы работы"
+msgstr "Aukioloajat"
+
+#: .\templates\contact_page\contact_page.html:21
+msgid "пн-пт"
+msgstr "ma-pe klo"
+
+#: .\templates\contact_page\contact_page.html:22
+msgid "сб"
+msgstr "la klo"
+
+#: .\templates\contact_page\contact_page.html:53
+msgid "Отправьте нам сообщение"
+msgstr "Jätä meille viesti"
+
+#: .\templates\contact_page\contact_page.html:55
+msgid "Не стесняйтесь написать нам. Мы ответим вам как можно скорее."
+msgstr ""
+"Ota rohkeasti yhteyttä, niin otamme sinuun yhteyttä mahdollisimman pian."
+
+#: .\templates\contact_page\contact_page.html:75
+msgid "Отправить сообщение"
+msgstr "Lähetä viesti"
+
+#: .\templates\menu_page\main_page.html:9
+msgid "Главная"
+msgstr "Etusivu"
+
+#: .\templates\menu_page\main_page.html:16
+msgid "Дина Варламова"
+msgstr "Dina Varlamova"
+
+#: .\templates\menu_page\main_page.html:17
+msgid "Профессиональные услуги педиатра в Йоэнсуу"
+msgstr "Ammattitaitoiset lastenlääkäripalvelut Joensuussa"
+
+#: .\templates\menu_page\main_page.html:28
+msgid "Здоровье превыше всего"
+msgstr "Terveys tulee ensin"
+
+#: .\templates\menu_page\main_page.html:30
+msgid ""
+"Клиника Дины Варламовой занимается детскими заболеваниями и предлагает "
+"индивидуальный подход к каждому маленькому пациенту и его родителю. Здесь "
+"используются не только передовые технологии, но и создается комфортная "
+"атмосфера, в которой пациенты чувствуют себя спокойно и защищено."
+msgstr ""
+"Dina Varlamovan klinikka käsittelee lasten sairauksia ja tarjoaa "
+"yksilöllisen lähestymistavan jokaiselle nuorelle potilaalle ja hänen "
+"vanhemmilleen. Täällä ei käytetä vain kehittyneitä tekniikoita, vaan luodaan "
+"myös mukava ilmapiiri, jossa potilaat tuntevat olonsa rauhalliseksi ja "
+"suojatuksi."
+
+#: .\templates\menu_page\main_page.html:36
+msgid "Индивидуальный подход"
+msgstr "Yksilöllinen lähestymistapa"
+
+#: .\templates\menu_page\main_page.html:41
+msgid "Современное оборудование"
+msgstr "Nykyaikaiset laitteet"
+
+#: .\templates\menu_page\main_page.html:46
+msgid "Комфортная атмосфера"
+msgstr "Mukava ilmapiiri"
+
+#: .\templates\menu_page\main_page.html:55
+msgid "О докторе"
+msgstr "Tietoja lääkäristä"
+
+#: .\templates\menu_page\main_page.html:57
+msgid "Я практикующий врач-педиатр с большим опытом работы."
+msgstr "Olen harjoitteleva lastenlääkäri, jolla on laaja työkokemus."
+
+#: .\templates\menu_page\main_page.html:59
+msgid "Моя главная задача – забота о здоровье ваших детей."
+msgstr "Tärkein tehtäväni on huolehtia lastesi terveydestä."
+
+#: .\templates\menu_page\main_page.html:62
+msgid ""
+"Современный подход, профессионализм и теплота в обслуживании – вот ключевые "
+"принципы, на которых строится моя работа."
+msgstr ""
+"Moderni lähestymistapa, ammattitaito ja lämmin palvelu ovat keskeisiä "
+"periaatteita, joihin työni perustuu."
+
+#: .\templates\menu_page\main_page.html:65
+msgid "Откройте дверь в мир крепкого здоровья вашего малыша!"
+msgstr "Avaa ovi vauvallesi hyvän terveyden maailmaan!"
+
+#: .\templates\menu_page\main_page.html:76
+msgid "Хотите индивидуальный подход? Клиника"
+msgstr "Kun haluat yksilöllistä hoitoa,"
+
+#: .\templates\menu_page\main_page.html:76
+msgid "Дины Варламовой"
+msgstr "Dina Varlamova"
+
+#: .\templates\menu_page\main_page.html:76
+msgid "к Вашим услугам!"
+msgstr "klinikka on sinua varten"
+
+#: .\templates\price_page\price_page.html:15
+msgid "Цены"
+msgstr "Hinnat"
+
+#: .\templates\price_page\price_page.html:34
+msgid ""
+"В стоимость посещения входит плата за офисные услуги в размере 33,90 евро и "
+"плата за хранение данных в электронном архиве (Kanta.fi) в размере 2,90 евро "
+"за посещение. В будние дни после 19:00 и в выходные дни цены повышаются. "
+"Цены не учитывают возможную компенсацию Kela."
+msgstr ""
+"Vastaanottokäynnin hintaan sisältyy palvelumaksu 33,90 euroa "
+"(sarjakäynneissä 9,90 euroa/käyntikerta) ja Kanta-maksu 2,90 euroa/käynti. "
+"Arki-iltaisin klo 21 jälkeen ja viikonloppuina hinnat ovat korotetut. "
+"Hinnoissa ei ole huomioitu mahdollista Kela-korvausta."
+
+#: .\templates\price_page\price_page.html:37
+msgid "Рецепты"
+msgstr "Reseptit"
+
+#: .\templates\price_page\price_page.html:49
+msgid "шт"
+msgstr "kpl"
+
+#: .\templates\price_page\price_page.html:58
+msgid "Найти свободное время"
+msgstr "Näytä vapaat ajat"
+
+#: .\templates\services_page\services_page.html:9
+#: .\templates\services_page\services_page.html:15
+msgid "Услуги"
+msgstr "Palvelut"

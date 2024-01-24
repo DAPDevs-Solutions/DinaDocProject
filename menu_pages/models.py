@@ -1,8 +1,9 @@
 from django.db import models
+# from django.utils.translation import gettext_lazy as _
 
 
 class Menu(models.Model):
-    title = models.CharField(max_length=50)
+    title = models.CharField(max_length=50, verbose_name='Title')
     url = models.CharField(max_length=100)
 
     def __str__(self):
@@ -14,9 +15,9 @@ class Menu(models.Model):
 
 
 class ContactUs(models.Model):
-    name = models.CharField(max_length=50, verbose_name='Имя')
+    name = models.CharField(max_length=50)
     email = models.EmailField()
-    message = models.TextField(verbose_name='Сообщение')
+    message = models.TextField()
 
     def __str__(self):
         return f"Сообщение {self.message} от пользователя {self.name}"
@@ -39,7 +40,7 @@ class Category(models.Model):
 
 class ServiceBlock(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    service = models.CharField(max_length=30)
+    service = models.CharField(max_length=100)
 
     def __str__(self):
         return f'Service - {self.service}'
@@ -47,3 +48,16 @@ class ServiceBlock(models.Model):
     class Meta:
         verbose_name = 'Service'
         verbose_name_plural = 'Services'
+
+
+class Price(models.Model):
+    title = models.CharField(max_length=100)
+    price = models.IntegerField()
+    category = models.CharField(max_length=50)
+
+    def __str__(self):
+        return f'Service - {self.title} costs {self.price}'
+
+    class Meta:
+        verbose_name = 'Price'
+        verbose_name_plural = 'Prices'
