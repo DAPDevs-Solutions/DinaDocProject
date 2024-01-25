@@ -164,8 +164,9 @@ msgid "к Вашим услугам!"
 msgstr "klinikka on sinua varten"
 
 #: .\templates\price_page\price_page.html:15
+#: .\templates\price_page\price_page.html:9
 msgid "Цены"
-msgstr "Hinnat"
+msgstr "Hinnasto"
 
 #: .\templates\price_page\price_page.html:34
 msgid ""

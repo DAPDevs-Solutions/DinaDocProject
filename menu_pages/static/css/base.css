@@ -83,7 +83,7 @@ h1, h2, h3, ul, li, p {
 }
 
 
-/* HEDAER. Language choice */
+/* HEADER. Language choice */
 .lang_block {
     display: flex;
     align-items: center;
