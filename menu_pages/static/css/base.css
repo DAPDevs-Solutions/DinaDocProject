@@ -76,6 +76,7 @@ h1, h2, h3, ul, li, p {
 .user_nav--menu_list,
 .menu_list--list_items {
     display: flex;
+    align-items: center;
 }
 
 .item {
@@ -99,25 +100,61 @@ h1, h2, h3, ul, li, p {
     display: flex;
     align-items: center;
     position: relative;
+    padding: 10px 10px;
+    justify-content: space-between;
+    min-width: 67px;
+    cursor: pointer;
 }
 
-.lang_block > * {
-    margin-right: 10px;
+.lang_block:hover {
+    background-color: #C19BCC11;
+    border-radius: 32px;
+}
+
+.rotate {
+    transform: rotate(180deg);
 }
 
 .dropdown__langmenu {
     position: absolute;
     display: none;
-    padding: 10px;
-    top: 20px;
-    right: -20px;
+    top: 50px;
+    right: 0;
     text-align: center;
     border-radius: 7px;
-    font-size: 20px;
+    font-size: 13px;
+    background-color: #9b6fa4;
 }
 
-.lang_block:hover .dropdown__langmenu {
-    display: block;
+.show {
+    display: flex;
+}
+
+.lang-list {
+    min-width: 130px;
+    display: flex;
+    min-height: 50px;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 7px;
+}
+
+.lang-form {
+    border-radius: 7px;
+    color: #FFFFFF;
+    padding: 15px 0;
+}
+
+
+.lang-form a {
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.lang-form:hover {
+    background-color: #794A8380;
+    cursor: pointer;
+    color: #FFFFFF;
 }
 
 
