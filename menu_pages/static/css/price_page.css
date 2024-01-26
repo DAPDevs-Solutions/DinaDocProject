@@ -36,6 +36,7 @@
 
 .price__data {
     min-width: 130px;
+    box-sizing: border-box;
 }
 
 .table_row {
@@ -68,4 +69,133 @@
 
 .make-appointment-span {
     padding-right: 5px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .prices-table {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .prices h2 {
+        font-size: 17px;
+    }
+
+    .title__data, .price__data, .appointment-prices p {
+        font-size: 12px;
+    }
+
+    .prescription-prices h3 {
+        font-size: 15px;
+    }
+
+    .make-appointment-span {
+        font-size: 12px;
+    }
+
+    .make-appointment-btn img {
+        width: 18px;
+        height: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .table_row {
+        height: 35px;
+    }
+
+    .title__data {
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+    .price__data {
+        min-width: 100px;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .prices {
+        margin-bottom: 40px;
+    }
+
+    .prices h2 {
+        font-size: 15px;
+        padding: 30px 0;
+    }
+
+    .prices-table {
+        margin-bottom: 40px;
+    }
+
+    .table_row {
+        height: 30px;
+    }
+
+    .title__data, .price__data, .appointment-prices p {
+        font-size: 10px;
+    }
+
+    .price__data {
+        min-width: 60px;
+    }
+
+    .prescription-prices h3 {
+        font-size: 12px;
+    }
+
+    .make-appointment-span {
+        font-size: 10px;
+    }
+
+    .make-appointment-btn img {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .title__data, .price__data {
+        font-size: 9px;
+    }
+
+    .price__data {
+        min-width: 60px;
+    }
+
+    .appointment-prices p {
+        font-size: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 470px) {
+    .title__data, .price__data {
+        font-size: 8px;
+    }
+
+    .price__data {
+        min-width: 50px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .title__data, .price__data {
+        font-size: 7px;
+    }
+
+    .price__data {
+        min-width: 40px;
+    }
+
+    .prescription-prices h3 {
+        font-size: 11px;
+    }
+
+    .appointment-prices p{
+        font-size: 8px;
+    }
 }
