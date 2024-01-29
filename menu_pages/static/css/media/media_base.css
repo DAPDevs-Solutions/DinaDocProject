@@ -69,7 +69,6 @@
     .navigation {
         display: none;
         flex-direction: row;
-        /*position: fixed;*/
         height: 30px;
         width: 100%;
         top: 50px;
@@ -79,7 +78,7 @@
         animation: burgerAnimation 0.4s;
     }
 
-    .navigation .menu_list--tabs_items {
+    .navigation .menu--tabs_items {
         flex-direction: row;
         row-gap: 30px;
     }

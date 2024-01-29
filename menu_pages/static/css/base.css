@@ -73,8 +73,8 @@ h1, h2, h3, ul, li, p {
     width: 750px;
 }
 
-.user_nav--menu_list,
-.menu_list--list_items {
+.user_nav--menu,
+.menu--tabs_items {
     display: flex;
     align-items: center;
 }

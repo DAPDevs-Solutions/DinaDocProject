@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <link rel="stylesheet" href="{% static 'css/media/media-base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media/media_base.css' %}">
+
     <link rel="icon" type="image/x-con" href="{% static 'base/images/favicon.ico' %}">
     <title>{% block title %}{% endblock %}</title>
     {% block css %} {% endblock %}
@@ -28,7 +29,7 @@
         <div class="header__wrapper--user_nav">
             <div class="user_nav--menu">
                 <nav class="navigation">
-                    <ul class="menu_list--tabs_items">
+                    <ul class="menu--tabs_items">
                         {% for item in menu %}
                             <li class="item"><a href="{{ item.url }}">{{ item.title }}</a></li>
                         {% endfor %}                     
