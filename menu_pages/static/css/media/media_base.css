@@ -6,11 +6,6 @@
     display: flex !important;
 }
 
-@keyframes burgerAnimation {
-    from {opacity: 0}
-    to {opacity: 1}
-}
-
 @media screen and (max-width: 1400px) {
     .header__wrapper {
         padding-right: 15px;
@@ -22,6 +17,14 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .header__wrapper--user_nav {
+        justify-content: flex-end;
+    }
+
+    .user_nav--menu {
+        margin-right: 30px;
+    }
+
     /* Displaying the burger menu icon */
     .burger-menu {
         display: flex;
@@ -68,10 +71,14 @@
     /* Panel with tabs items */
     .navigation {
         display: none;
-        flex-direction: row;
-        height: 30px;
+        flex-direction: column;
+        position: fixed;
+        transition: transform .5s;
+        top: 0;
+        padding-top: 50px;
+        left: 0;
+        height: 100%;
         width: 100%;
-        top: 50px;
         z-index: 50;
         overflow-y: auto;
         background-color: white;
@@ -79,7 +86,11 @@
     }
 
     .navigation .menu--tabs_items {
-        flex-direction: row;
+        flex-direction: column;
         row-gap: 30px;
+    }
+
+    .menu--tabs_items {
+        align-items: flex-start;
     }
 }
