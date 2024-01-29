@@ -1,0 +1,12 @@
+@media screen and (max-width: 1000px) {
+    .services h2 {
+        padding: 30px 0 30px 0;
+    }
+
+    .services__section {
+        padding: 0 15px 0 15px;
+    }
+    .services-blocks {
+        justify-content: center;
+    }
+}
