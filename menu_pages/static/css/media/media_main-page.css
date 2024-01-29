@@ -1,0 +1,29 @@
+@media screen and (max-width: 1000px) {
+    main {
+        padding: 0 15px 0 15px;
+    }
+
+    .about-doc__section {
+        margin-bottom: 50px;
+    }
+    .about-health__section,
+    .about-doc-desc__section,
+    .personal-approach__section,
+    .google-map__section {
+        padding: 30px 0 30px 0;
+    }
+
+    .about-doc {
+        position: relative;
+    }
+
+    .doc-info {
+        position: absolute;
+        top: 68%;
+        max-width: 400px;
+    }
+
+    .about-doc__photo {
+        display: none;
+    }
+}

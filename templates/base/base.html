@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media/media-base.css' %}">
     <link rel="icon" type="image/x-con" href="{% static 'base/images/favicon.ico' %}">
     <title>{% block title %}{% endblock %}</title>
     {% block css %} {% endblock %}
@@ -25,12 +26,18 @@
         </div>
 
         <div class="header__wrapper--user_nav">
-            <div class="user_nav--menu_list">
-                <ul class="menu_list--list_items">
-                    {% for item in menu %}
-                        <li class="item"><a href="{{ item.url }}">{{ item.title }}</a></li>
-                    {% endfor %}
-                </ul>
+            <div class="user_nav--menu">
+                <nav class="navigation">
+                    <ul class="menu_list--tabs_items">
+                        {% for item in menu %}
+                            <li class="item"><a href="{{ item.url }}">{{ item.title }}</a></li>
+                        {% endfor %}                     
+                    </ul>                 
+                </nav>
+                            
+                <div class="burger-menu">
+                    <span></span>
+                </div>
 
                 <div class="lang_block" id="lang_blockID">
                     <img src="{% static 'base/images/lang_globus.svg' %}" alt="Глобус">
@@ -104,5 +111,6 @@
 
 <script src="{% static 'js/menu_list.js' %}"></script>
 <script src="{% static 'js/language.js' %}"></script>
+<script src="{% static 'js/burger-menu.js' %}"></script>
 </body>
 </html>
