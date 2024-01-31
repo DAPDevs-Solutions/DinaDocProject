@@ -67,7 +67,7 @@ h1, h2, h3, ul, li, p {
 
 /* HEADER. User navigation */
 .header__wrapper--logo {
-    /*z-index: 50;*/
+    z-index: 10;
 
 }
 

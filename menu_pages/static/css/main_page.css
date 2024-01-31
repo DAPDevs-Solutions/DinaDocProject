@@ -14,7 +14,7 @@ h1, h2, h3, p {
 
 /* About doc section */
 .about-doc__section {
-    background-color: #ede3f6;    
+    background-color: #ede3f6;
     margin-bottom: 100px;
 }
 
@@ -108,7 +108,7 @@ h1, h2, h3, p {
 
 .about-doc-desc {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     box-sizing: border-box;
 }
 
@@ -131,10 +131,14 @@ h1, h2, h3, p {
 .about-doc__fullinfo p {
     text-align: center;
     line-height: 1.5em;
-    margin-bottom: 20px;
     font-size: 25px;
     font-weight: 300;
     color: #FFFFFF;
+}
+
+.about-doc__fullinfo p:not(:last-child) {
+    margin-bottom: 20px;
+
 }
 
 .about-doc__photo img {

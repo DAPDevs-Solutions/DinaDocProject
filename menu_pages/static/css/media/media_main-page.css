@@ -1,16 +1,10 @@
 @media screen and (max-width: 1000px) {
-    main {
-        padding: 0 15px 0 15px;
+    section:not(:first-child) {
+        padding: 0 15px 50px 15px;
     }
 
     .about-doc__section {
         margin-bottom: 50px;
-    }
-    .about-health__section,
-    .about-doc-desc__section,
-    .personal-approach__section,
-    .google-map__section {
-        padding: 30px 0 30px 0;
     }
 
     .about-doc {
@@ -23,7 +17,40 @@
         max-width: 400px;
     }
 
+    /*ЗДОРОВЬЯ ПРЕВЫШЕ ВСЕГО*/
+    #health-above {
+        margin-bottom: 25px;
+    }
+
+    #about-clinic {
+        margin-bottom: 30px;
+    }
+
+    /*О ДОКТОРЕ ПОДРОБНЕЕ*/
+    .about-doc__fullinfo {
+        padding: 38px 28px 38px 28px;
+        max-width: 100%;
+    }
+    .about-doc__fullinfo h2 {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .about-doc__fullinfo p {
+    }
+
+
+    /**/
+
+
+
+
+
+
+
     .about-doc__photo {
         display: none;
     }
+
+
 }
