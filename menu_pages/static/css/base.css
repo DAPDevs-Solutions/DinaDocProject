@@ -129,6 +129,7 @@ h1, h2, h3, ul, li, p {
     border-radius: 7px;
     font-size: 13px;
     background-color: #9b6fa4;
+    z-index: 999;
 }
 
 .show {

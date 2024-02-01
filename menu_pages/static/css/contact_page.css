@@ -32,6 +32,7 @@ h1, h2, h3, p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .contact-us__info h2 {

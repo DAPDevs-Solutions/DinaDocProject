@@ -5,42 +5,9 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .prices h2 {
-        font-size: 17px;
-    }
-
-    .title__data, .price__data, .appointment-prices p {
-        font-size: 12px;
-    }
-
-    .prescription-prices h3 {
-        font-size: 15px;
-    }
-
-    .make-appointment-span {
-        font-size: 12px;
-    }
-
     .make-appointment-btn img {
         width: 18px;
         height: 14px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-
-
-    .table_row {
-        height: 35px;
-    }
-
-    .title__data {
-        padding-left: 10px;
-        font-size: 12px;
-    }
-
-    .price__data {
-        min-width: 100px;
     }
 }
 
@@ -50,32 +17,17 @@
     }
 
     .prices h2 {
-        font-size: 15px;
         padding: 30px 0;
     }
 
-    .prices-table {
-        margin-bottom: 40px;
-    }
-
     .table_row {
-        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
-    .title__data, .price__data, .appointment-prices p {
-        font-size: 10px;
-    }
-
-    .price__data {
-        min-width: 60px;
-    }
-
-    .prescription-prices h3 {
-        font-size: 12px;
-    }
-
-    .make-appointment-span {
-        font-size: 10px;
+    .title__data, .price__data {
+        width: 100%;
     }
 
     .make-appointment-btn img {
@@ -85,44 +37,21 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .title__data, .price__data {
-        font-size: 9px;
-    }
-
     .price__data {
         min-width: 60px;
-    }
-
-    .appointment-prices p {
-        font-size: 10px;
     }
 }
 
 
 @media only screen and (max-width: 470px) {
-    .title__data, .price__data {
-        font-size: 8px;
-    }
-
     .price__data {
         min-width: 50px;
     }
 }
 
 @media only screen and (max-width: 420px) {
-    .title__data, .price__data {
-        font-size: 7px;
-    }
-
     .price__data {
         min-width: 40px;
     }
 
-    .prescription-prices h3 {
-        font-size: 11px;
-    }
-
-    .appointment-prices p{
-        font-size: 8px;
-    }
 }

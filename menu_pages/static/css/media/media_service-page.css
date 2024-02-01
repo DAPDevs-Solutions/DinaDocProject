@@ -1,22 +1,38 @@
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 1240px) {
     .services-blocks {
-        justify-content: center;
+        padding: 0 25px;
+    }
+
+    .category_and_services {
+        min-width: 49%;
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .services-blocks {
+        justify-content: space-between;
+    }
+}
+
+
 @media screen and (max-width: 1000px) {
+    .category_and_services {
+        min-width: 100%;
+    }
+
+    .all-services {
+        min-height: 150px;
+    }
+
     .services h2 {
-        padding: 30px 0 30px 0;
+        font-size: 20px;
     }
 
     .services__section {
         padding: 0 15px 0 15px;
     }
+
     .services-blocks {
         justify-content: center;
-    }
-
-    .category_and_services:last-child{
-        min-width: 600px;
     }
 }
