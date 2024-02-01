@@ -31,7 +31,12 @@
         margin-right: 30px;
     }
 
+    .btn {
+        font-size: 20px;
+    }
+
     /* Displaying the burger menu icon */
+    /*СТИЛЬ НА ВЕСЬ ЭКРАН, МЕНЮ СЛЕВА*/
     /*.burger-menu {*/
     /*    display: flex;*/
     /*    position: relative;*/
@@ -81,7 +86,6 @@
 
 
      /*Panel with tabs items*/
-    /*СТИЛЬ НА ВЕСЬ ЭКРАН, МЕНЮ СЛЕВА*/
     /*.navigation {*/
     /*    display: none;*/
     /*    flex-direction: column;*/
@@ -105,7 +109,6 @@
         width: 40px;
         height: 40px;
         border: none;
-        padding: 0;
         background-color: #ffffff;
         /*background-color: orange;*/
     }
@@ -129,6 +132,20 @@
         transform: translateY(28px);
     }
 
+    .user_nav--menu.open .burger-menu span:nth-child(1) {
+        top: 20px;
+        transform: translateY(0) rotate(45deg);
+    }
+
+    .user_nav--menu.open .burger-menu span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .user_nav--menu.open .burger-menu span:nth-child(3) {
+        top: 20px;
+        transform: translateY(0) rotate(-45deg);
+    }
+
     .navigation {
         position: absolute;
         top: 0;
@@ -141,7 +158,7 @@
         transition: transform .5s;
     }
 
-    .open {
+    .user_nav--menu.open .navigation{
         transform: translateX(100%);
     }
 
@@ -160,6 +177,18 @@
     .item a {
         font-size: 25px;
         padding: 0;
+    }
+
+
+
+    /* FOOTER */
+    .footer__wrapper p {
+        font-size: 20px;
+    }
+
+    .footer__wrapper--contact_mail p,
+    .footer_wrapper--contact_phone p {
+        /*display: none;*/
     }
 
 }
