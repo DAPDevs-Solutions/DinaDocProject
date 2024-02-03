@@ -189,7 +189,6 @@ h1, h2, h3, ul, li, p {
 
 /* FOOTER */
 footer {
-    /*padding: 0 0 10px 0;*/
     border-top: 1px solid #794A8332;
 }
 
@@ -197,13 +196,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
     color: #3B485B;
-    margin-bottom: 10px;
-    /*padding: 30px 0;*/
+    margin: 0 auto;
+    padding: 30px 0;
 }
 
-.footer__wrapper--logo_rights p {
+.footer__wrapper--logo_rights span {
     font-size: 12px;
 }
 
@@ -211,9 +209,17 @@ footer {
     max-width: 100px;
 }
 
+.contact-info-footer {
+    display: flex;
+    flex-direction: row;
+    min-width: calc(100% - 143px - 225px);
+    justify-content: space-between;
+    align-items: center;
+}
+
 .footer-align-center {
     max-width: 250px;
-    min-width: 200px;
+    min-width: 245px;
     text-align: center;
 }
 
