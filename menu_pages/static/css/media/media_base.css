@@ -2,9 +2,9 @@
     display: none;
 }
 
-/*.open {*/
-/*    display: flex !important;*/
-/*}*/
+.open {
+    display: flex !important;
+}
 
 
 @media screen and (max-width: 1400px) {
@@ -37,130 +37,130 @@
 
     /* Displaying the burger menu icon */
     /*СТИЛЬ НА ВЕСЬ ЭКРАН, МЕНЮ СЛЕВА*/
-    /*.burger-menu {*/
-    /*    display: flex;*/
-    /*    position: relative;*/
-    /*    z-index: 50;*/
-    /*    align-items: center;*/
-    /*    width: 30px;*/
-    /*    height: 18px;*/
-    /*}*/
-
-    /*.burger-menu span {*/
-    /*    height: 2px;*/
-    /*    width: 80%;*/
-    /*    transform: scale(1);*/
-    /*    background-color: #b85ad0;*/
-    /*}*/
-
-    /*.burger-menu:before, .burger-menu:after {*/
-    /*    content: '';*/
-    /*    position: absolute;*/
-    /*    height: 2px;*/
-    /*    width: 100%;*/
-    /*    background-color: #b85ad0;*/
-    /*    transition: all 0.5s ease 0s;*/
-    /*}*/
-
-    /*.burger-menu:before {*/
-    /*    top: 0;*/
-    /*}*/
-
-    /*.burger-menu:after {*/
-    /*    bottom: 0;*/
-    /*}*/
-
-    /*.burger-menu.active span {*/
-    /*    transform: scale(0);*/
-    /*}*/
-
-    /*.burger-menu.active::before {*/
-    /*    top: 50%;*/
-    /*    transform: rotate(-45deg) translate(0, -50%);*/
-    /*}*/
-
-    /*.burger-menu.active:after {*/
-    /*    bottom: 50%;*/
-    /*    transform: rotate(45deg) translate(0, 50%);*/
-    /*}*/
-
-
-     /*Panel with tabs items*/
-    /*.navigation {*/
-    /*    display: none;*/
-    /*    flex-direction: column;*/
-    /*    position: fixed;*/
-    /*    transition: transform .5s;*/
-    /*    top: 0;*/
-    /*    padding-top: 50px;*/
-    /*    left: 0;*/
-    /*    height: 100%;*/
-    /*    width: 100%;*/
-    /*    z-index: 50;*/
-    /*    overflow-y: auto;*/
-    /*    background-color: white;*/
-    /*    animation: burgerAnimation 0.4s;*/
-    /*}*/
-
-    /*СТИЛЬ ВЫЕЗЖАЮЩЕЙ СЛЕВА МЕНЮ*/
     .burger-menu {
         display: flex;
         position: relative;
-        width: 40px;
-        height: 40px;
-        border: none;
-        background-color: #ffffff;
-        /*background-color: orange;*/
+        z-index: 50;
+        align-items: center;
+        width: 30px;
+        height: 18px;
     }
 
     .burger-menu span {
-        position: absolute;
-        width: 70%;
         height: 2px;
+        width: 80%;
+        transform: scale(1);
         background-color: #b85ad0;
     }
 
-    .burger-menu span:nth-child(1) {
-        transform: translateY(10px);
-    }
-
-    .burger-menu span:nth-child(2) {
-        transform: translateY(19px);
-    }
-
-    .burger-menu span:nth-child(3) {
-        transform: translateY(28px);
-    }
-
-    .user_nav--menu.open .burger-menu span:nth-child(1) {
-        top: 20px;
-        transform: translateY(0) rotate(45deg);
-    }
-
-    .user_nav--menu.open .burger-menu span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .user_nav--menu.open .burger-menu span:nth-child(3) {
-        top: 20px;
-        transform: translateY(0) rotate(-45deg);
-    }
-
-    .navigation {
+    .burger-menu:before, .burger-menu:after {
+        content: '';
         position: absolute;
-        top: 0;
-        left: -200px;
-        width: 200px;
-        padding-top: 130px;
-        background-color: #ffffff;
-        z-index: 3;
-        border-radius: 10px;
-        transition: transform .5s;
+        height: 2px;
+        width: 100%;
+        background-color: #b85ad0;
+        transition: all 0.5s ease 0s;
     }
 
-    .user_nav--menu.open .navigation{
-        transform: translateX(100%);
+    .burger-menu:before {
+        top: 0;
     }
+
+    .burger-menu:after {
+        bottom: 0;
+    }
+
+    .burger-menu.active span {
+        transform: scale(0);
+    }
+
+    .burger-menu.active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+    }
+
+    .burger-menu.active:after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0, 50%);
+    }
+
+
+     /*Panel with tabs items*/
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        transition: transform .5s;
+        top: 100px;
+        padding-top: 30px;
+        left: 0;
+        height: 20%;
+        width: 100%;
+        z-index: 50;
+        overflow-y: auto;
+        background-color: white;
+        animation: burgerAnimation 0.4s;
+    }
+
+    /*СТИЛЬ ВЫЕЗЖАЮЩЕЙ СЛЕВА МЕНЮ*/
+    /*.burger-menu {*/
+    /*    display: flex;*/
+    /*    position: relative;*/
+    /*    width: 40px;*/
+    /*    height: 40px;*/
+    /*    border: none;*/
+    /*    background-color: #ffffff;*/
+    /*    !*background-color: orange;*!*/
+    /*}*/
+
+    /*.burger-menu span {*/
+    /*    position: absolute;*/
+    /*    width: 70%;*/
+    /*    height: 2px;*/
+    /*    background-color: #b85ad0;*/
+    /*}*/
+
+    /*.burger-menu span:nth-child(1) {*/
+    /*    transform: translateY(10px);*/
+    /*}*/
+
+    /*.burger-menu span:nth-child(2) {*/
+    /*    transform: translateY(19px);*/
+    /*}*/
+
+    /*.burger-menu span:nth-child(3) {*/
+    /*    transform: translateY(28px);*/
+    /*}*/
+
+    /*.user_nav--menu.open .burger-menu span:nth-child(1) {*/
+    /*    top: 20px;*/
+    /*    transform: translateY(0) rotate(45deg);*/
+    /*}*/
+
+    /*.user_nav--menu.open .burger-menu span:nth-child(2) {*/
+    /*    opacity: 0;*/
+    /*}*/
+
+    /*.user_nav--menu.open .burger-menu span:nth-child(3) {*/
+    /*    top: 20px;*/
+    /*    transform: translateY(0) rotate(-45deg);*/
+    /*}*/
+
+    /*.navigation {*/
+    /*    position: absolute;*/
+    /*    top: 0;*/
+    /*    left: -200px;*/
+    /*    width: 200px;*/
+    /*    padding-top: 130px;*/
+    /*    background-color: #ffffff;*/
+    /*    z-index: 3;*/
+    /*    border-radius: 10px;*/
+    /*    transition: transform .5s;*/
+    /*}*/
+
+    /*.user_nav--menu.open .navigation{*/
+    /*    transform: translateX(100%);*/
+    /*}*/
 
     .menu--tabs_items {
         padding: 0 10px 10px 20px;
@@ -191,4 +191,20 @@
         /*display: none;*/
     }
 
+}
+
+@media screen and (max-width: 900px) {
+    .footer__wrapper {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .rights {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .rights p {
+        font-size: 15px;
+    }
 }

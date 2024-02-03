@@ -36,14 +36,14 @@
                         </ul>                 
                     </nav>
                                 
-{#                    <div class="burger-menu" id="burger">#}
+                    <div class="burger-menu" id="burger">
+                        <span></span>
+                    </div>
+{#                    <button class="burger-menu" id="burger">#}
 {#                        <span></span>#}
-{#                    </div>#}
-                    <button class="burger-menu" id="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+{#                        <span></span>#}
+{#                        <span></span>#}
+{#                    </button>#}
     
                     <div class="lang_block" id="lang_blockID">
                         <img src="{% static 'base/images/lang_globus.svg' %}" alt="Глобус">
@@ -89,28 +89,29 @@
         <div class="footer__wrapper header-footer_container">
             <div class="footer__wrapper--logo_rights">
                 <img src="{% static 'base/images/dina_logo.svg' %}" alt="Логотип">
-    
-                <p>© Dina Varlamova Oy 2024</p>
             </div>
-    
+            
             <div class="footer__wrapper--address footer-align-center">
                 <h3 id="address">Ohtokuja 3A</h3>
-    
                 <p>80230 Joensuu</p>
             </div>
-    
+            
             <div class="footer__wrapper--country_flag">
                 <img src="{% static 'base/images/country_flag.png' %}" alt="">
             </div>
-    
+            
             <div class="footer__wrapper--contact_mail footer-align-center">
                 <h3 id="email"><a href="mailto: dinavarlamova@gmail.fi" class="doc-email">dinavarlamova@gmail.fi</a></h3>
                 <p> {% translate 'Возможен прием в вечернее время и в выходные дни' %} </p>
             </div>
-    
+            
             <div class="footer_wrapper--contact_phone footer-align-center">
                 <h3 id="phone-number"><a href="tel:+040 000 0000" class="doc-phonenumber">040 000 0000</a></h3>
-                <p>{% translate 'Есть онлайн запись на прием' %}</p>
+                <p>{%translate 'Есть онлайн запись на прием' %}</p>
+            </div>
+            
+            <div class="rights">
+                <p>© Dina Varlamova Oy 2024</p>
             </div>
         </div>
     </footer>

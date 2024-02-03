@@ -199,7 +199,8 @@ footer {
     align-items: center;
     margin: auto;
     color: #3B485B;
-    padding: 30px 0;
+    margin-bottom: 10px;
+    /*padding: 30px 0;*/
 }
 
 .footer__wrapper--logo_rights p {
