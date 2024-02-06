@@ -34,6 +34,29 @@
                             <li class="item"><a href="{{ item.url }}">{{ item.title }}</a></li>
                         {% endfor %}
                     </ul>
+                    <ul class="lang-line">
+                        <img src="{% static 'base/images/lang_globus.svg' %}" alt="Глобус">
+                        {% for language in languages %}
+                            <li class="lang-item-line">
+                                <form class="lang-form-line" action="{% url 'set_language' %}" method="post">
+                                    {% csrf_token %}
+                                    <input name="next" type="hidden" value="{{ redirect_to }}">
+                                    <input type="hidden" name="language" value="{{ language.code }}">
+                                    <a onclick="this.parentNode.submit();">
+                                        {{ language.name_local }} ({{ language.code }})
+                                    </a>
+                                </form>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <div class="nav_list--make_appointment-burger make-appointment-btn-all">
+
+                        <button class="btn nav_list--button">
+                            <img class="appointment-icon" src="{% static 'base/images/make_appointment_icon.svg' %}"
+                                 alt="Иконка записи на прием">
+                            <span>{% translate 'Записаться на прием' %}</span>
+                        </button>
+                    </div>
                 </nav>
 
                 <div class="burger-menu" id="burger">
@@ -72,11 +95,11 @@
                 </div>
             </div>
 
-            <div class="nav_list--make_appointment">
+            <div class="nav_list--make_appointment make-appointment-btn-all">
                 <button class="btn nav_list--button">
                     <img class="appointment-icon" src="{% static 'base/images/make_appointment_icon.svg' %}"
                          alt="Иконка записи на прием">
-                    {% translate 'Записаться на прием' %}
+                    <span>{% translate 'Записаться на прием' %}</span>
                 </button>
             </div>
         </div>
@@ -95,8 +118,8 @@
         </div>
         <div class="contact-info-footer">
             <div class="footer__wrapper--address footer-align-center">
-                <h3 id="address">Ohtokuja 3A</h3>
-                <p>80230 Joensuu</p>
+                <h3 id="address">Kauppakatu 30</h3>
+                <p>80100 Joensuu</p>
             </div>
 
             <div class="footer__wrapper--contact_mail footer-align-center">

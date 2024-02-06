@@ -1,6 +1,18 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1260px) {
+    .google-map__section {
+        padding-right: 55px;
+        padding-left: 55px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
     section:not(:first-child) {
-        padding: 0 20px 50px 20px;
+        padding: 0 20px 40px 20px;
+    }
+
+    .advantages-icons img {
+        max-width: 70px;
+        max-height: 70px;
     }
 
     .about-doc__section {
@@ -26,7 +38,6 @@
         margin-bottom: 30px;
         font-size: 23px;
         line-height: 1.5em;
-        text-indent: 1.25em;
         /*padding: 0 20px 0 20px;*/
     }
 
@@ -35,10 +46,8 @@
     .individual_approach p,
     .modern_equipment p,
     .comfortable_atmosphere p {
-        font-size: 25px;
+        font-size: 22px;
     }
-
-
 
 
     /*О ДОКТОРЕ ПОДРОБНЕЕ*/
@@ -46,26 +55,66 @@
         padding: 38px 28px 38px 28px;
         max-width: 100%;
     }
-    .about-doc__fullinfo h2 {
-        font-size: 30px;
-        margin-bottom: 35px;
-    }
-
-    .about-doc__fullinfo p {
-    }
 
 
     /**/
-
-
-
-
-
-
-
     .about-doc__photo {
         display: none;
     }
 
+}
 
+@media screen and (max-width: 800px) {
+    .doc-info {
+        max-width: 300px;
+    }
+
+    .doc-photo img {
+        max-width: 350px;
+    }
+
+    #doc-name {
+        font-size: 27px;
+        font-weight: 600;
+    }
+
+    #doc-spec {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .about-doc__fullinfo h2 {
+        font-size: 25px;
+        margin-bottom: 35px;
+    }
+
+    .about-doc__fullinfo p {
+        font-size: 20px;
+    }
+
+    #about-clinic {
+        font-size: 18px;
+    }
+
+    .advantages-icons {
+        flex-direction: column;
+
+        > div {
+            margin-bottom: 30px;
+        }
+    }
+
+    .advantages-icons p {
+        font-size: 15px;
+    }
+
+    .advantages-icons img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .personal-approach p {
+        font-size: 18px;
+        margin-top: 35px;
+    }
 }

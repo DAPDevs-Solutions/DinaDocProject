@@ -21,22 +21,26 @@
 
 @media screen and (max-width: 1200px) {
     .footer__wrapper p {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .footer__wrapper h3 {
-        font-size: 15px;
+        font-size: 17px;
     }
 }
 
 
 @media screen and (max-width: 1000px) {
+    .header__wrapper--logo img {
+        max-width: 100px;
+    }
+
     .header__wrapper--user_nav {
         justify-content: flex-end;
     }
 
     .user_nav--menu {
-        margin-right: 30px;
+        margin-right: 20px;
     }
 
     .btn {
@@ -52,6 +56,7 @@
         align-items: center;
         width: 30px;
         height: 18px;
+        cursor: pointer;
     }
 
     .burger-menu span {
@@ -100,15 +105,25 @@
         position: fixed;
         transition: transform .5s;
         top: 100px;
-        padding-top: 30px;
+        padding-top: 20px;
         left: 0;
-        height: 20%;
+        height: max-content;
         width: 100%;
         z-index: 50;
         overflow-y: auto;
         background-color: white;
         animation: burgerAnimation 0.4s;
+        border: 0;
     }
+
+    .lang_block {
+        display: none;
+    }
+
+    .lang-line {
+        display: flex;
+    }
+
 
     /*СТИЛЬ ВЫЕЗЖАЮЩЕЙ СЛЕВА МЕНЮ*/
     /*.burger-menu {*/
@@ -161,7 +176,7 @@
     /*    transform: translateX(100%);*/
     /*}*/
     .menu--tabs_items {
-        padding: 0 10px 10px 20px;
+        padding: 0 10px 0 20px;
         flex-direction: column;
         align-items: flex-start;
 
@@ -173,8 +188,22 @@
     }
 
     .item a {
-        font-size: 25px;
+        font-size: 1.4rem;
         padding: 0;
+    }
+
+    .nav_list--make_appointment {
+        display: none;
+    }
+
+    .nav_list--make_appointment-burger {
+        display: flex;
+        padding: 0 10px 10px 20px;
+    }
+
+    .make-appointment-btn-all button {
+        width: 100%;
+        border-radius: 4px;
     }
 
 
@@ -187,15 +216,21 @@
         /*display: none;*/
     }
 
-}
 
-
-@media screen and (max-width: 1000px) {
     .footer__wrapper {
         position: relative;
         margin-bottom: 10px;
         flex-direction: column;
-        min-height: 340px;
+        min-height: 370px;
+    }
+
+    .footer__wrapper--logo_rights {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-info-footer {
+        min-width: calc(100% - 100px);
     }
 
     .rights {
@@ -204,7 +239,8 @@
     }
 
     .footer__wrapper--logo_rights img {
-        max-width: 170px;
+        min-width: 180px;
+        max-width: 220px;
     }
 
     .footer__wrapper p {
@@ -215,12 +251,32 @@
         font-size: 20px;
     }
 
+    .btn {
+        font-size: 17px;
+    }
+
+    .button {
+        padding: 10px;
+    }
 
 }
 
 @media screen and (max-width: 900px) {
-
     .rights p {
         font-size: 15px;
     }
 }
+
+
+@media screen and (max-width: 700px) {
+    .contact-info-footer {
+        flex-direction: column;
+        min-height: 320px;
+        justify-content: space-evenly;
+    }
+
+    .footer-align-center {
+        max-width: max-content;
+    }
+}
+
