@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 21:24+0700\n"
+"POT-Creation-Date: 2024-02-06 20:32+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,69 +40,69 @@ msgstr "Email"
 msgid "Сообщение"
 msgstr "Viesti"
 
-#: .\templates\base\base.html:67 .\templates\menu_page\main_page.html:80
+#: .\templates\base\base.html:79 .\templates\menu_page\main_page.html:81
 msgid "Записаться на прием"
 msgstr "Varaa aika"
 
-#: .\templates\base\base.html:96
+#: .\templates\base\base.html:105
 msgid "Возможен прием в вечернее время и в выходные дни"
 msgstr "Myös ilta- ja viikonloppuaikoja"
 
-#: .\templates\base\base.html:101
+#: .\templates\base\base.html:110
 msgid "Есть онлайн запись на прием"
 msgstr "Ajanvaraus myös netissä"
 
-#: .\templates\contact_page\contact_page.html:9
+#: .\templates\contact_page\contact_page.html:10
 msgid "Контакты"
 msgstr "Yhteystiedot"
 
 # КОНТАКТЫ / CONTACTS
-#: .\templates\contact_page\contact_page.html:16
+#: .\templates\contact_page\contact_page.html:17
 msgid "СВЯЖИТЕСЬ С НАМИ"
 msgstr "Ota yhteyttä"
 
-#: .\templates\contact_page\contact_page.html:19
+#: .\templates\contact_page\contact_page.html:20
 msgid "Часы работы"
 msgstr "Aukioloajat"
 
-#: .\templates\contact_page\contact_page.html:21
+#: .\templates\contact_page\contact_page.html:22
 msgid "пн-пт"
 msgstr "ma-pe klo"
 
-#: .\templates\contact_page\contact_page.html:22
+#: .\templates\contact_page\contact_page.html:23
 msgid "сб"
 msgstr "la klo"
 
-#: .\templates\contact_page\contact_page.html:53
+#: .\templates\contact_page\contact_page.html:54
 msgid "Отправьте нам сообщение"
 msgstr "Jätä meille viesti"
 
-#: .\templates\contact_page\contact_page.html:55
+#: .\templates\contact_page\contact_page.html:56
 msgid "Не стесняйтесь написать нам. Мы ответим вам как можно скорее."
 msgstr ""
 "Ota rohkeasti yhteyttä, niin otamme sinuun yhteyttä mahdollisimman pian."
 
-#: .\templates\contact_page\contact_page.html:75
+#: .\templates\contact_page\contact_page.html:78
 msgid "Отправить сообщение"
 msgstr "Lähetä viesti"
 
-#: .\templates\menu_page\main_page.html:9
+#: .\templates\menu_page\main_page.html:10
 msgid "Главная"
 msgstr "Etusivu"
 
-#: .\templates\menu_page\main_page.html:16
+#: .\templates\menu_page\main_page.html:17
 msgid "Дина Варламова"
 msgstr "Dina Varlamova"
 
-#: .\templates\menu_page\main_page.html:17
+#: .\templates\menu_page\main_page.html:18
 msgid "Профессиональные услуги педиатра в Йоэнсуу"
 msgstr "Ammattitaitoiset lastenlääkäripalvelut Joensuussa"
 
-#: .\templates\menu_page\main_page.html:28
+#: .\templates\menu_page\main_page.html:29
 msgid "Здоровье превыше всего"
 msgstr "Terveys tulee ensin"
 
-#: .\templates\menu_page\main_page.html:30
+#: .\templates\menu_page\main_page.html:31
 msgid ""
 "Клиника Дины Варламовой занимается детскими заболеваниями и предлагает "
 "индивидуальный подход к каждому маленькому пациенту и его родителю. Здесь "
@@ -115,31 +115,31 @@ msgstr ""
 "myös mukava ilmapiiri, jossa potilaat tuntevat olonsa rauhalliseksi ja "
 "suojatuksi."
 
-#: .\templates\menu_page\main_page.html:36
+#: .\templates\menu_page\main_page.html:37
 msgid "Индивидуальный подход"
 msgstr "Yksilöllinen lähestymistapa"
 
-#: .\templates\menu_page\main_page.html:41
+#: .\templates\menu_page\main_page.html:42
 msgid "Современное оборудование"
 msgstr "Nykyaikaiset laitteet"
 
-#: .\templates\menu_page\main_page.html:46
+#: .\templates\menu_page\main_page.html:47
 msgid "Комфортная атмосфера"
 msgstr "Mukava ilmapiiri"
 
-#: .\templates\menu_page\main_page.html:55
+#: .\templates\menu_page\main_page.html:56
 msgid "О докторе"
 msgstr "Tietoja lääkäristä"
 
-#: .\templates\menu_page\main_page.html:57
+#: .\templates\menu_page\main_page.html:58
 msgid "Я практикующий врач-педиатр с большим опытом работы."
 msgstr "Olen harjoitteleva lastenlääkäri, jolla on laaja työkokemus."
 
-#: .\templates\menu_page\main_page.html:59
+#: .\templates\menu_page\main_page.html:60
 msgid "Моя главная задача – забота о здоровье ваших детей."
 msgstr "Tärkein tehtäväni on huolehtia lastesi terveydestä."
 
-#: .\templates\menu_page\main_page.html:62
+#: .\templates\menu_page\main_page.html:63
 msgid ""
 "Современный подход, профессионализм и теплота в обслуживании – вот ключевые "
 "принципы, на которых строится моя работа."
@@ -147,28 +147,28 @@ msgstr ""
 "Moderni lähestymistapa, ammattitaito ja lämmin palvelu ovat keskeisiä "
 "periaatteita, joihin työni perustuu."
 
-#: .\templates\menu_page\main_page.html:65
+#: .\templates\menu_page\main_page.html:66
 msgid "Откройте дверь в мир крепкого здоровья вашего малыша!"
 msgstr "Avaa ovi vauvallesi hyvän terveyden maailmaan!"
 
-#: .\templates\menu_page\main_page.html:76
+#: .\templates\menu_page\main_page.html:77
 msgid "Хотите индивидуальный подход? Клиника"
 msgstr "Kun haluat yksilöllistä hoitoa,"
 
-#: .\templates\menu_page\main_page.html:76
+#: .\templates\menu_page\main_page.html:77
 msgid "Дины Варламовой"
 msgstr "Dina Varlamova"
 
-#: .\templates\menu_page\main_page.html:76
-msgid "к Вашим услугам!"
-msgstr "klinikka on sinua varten"
+#: .\templates\menu_page\main_page.html:77
+msgid " к Вашим услугам!"
+msgstr " klinikka on sinua varten"
 
-#: .\templates\price_page\price_page.html:15
-#: .\templates\price_page\price_page.html:9
+#: .\templates\price_page\price_page.html:11
+#: .\templates\price_page\price_page.html:17
 msgid "Цены"
 msgstr "Hinnasto"
 
-#: .\templates\price_page\price_page.html:34
+#: .\templates\price_page\price_page.html:36
 msgid ""
 "В стоимость посещения входит плата за офисные услуги в размере 33,90 евро и "
 "плата за хранение данных в электронном архиве (Kanta.fi) в размере 2,90 евро "
@@ -180,19 +180,19 @@ msgstr ""
 "Arki-iltaisin klo 21 jälkeen ja viikonloppuina hinnat ovat korotetut. "
 "Hinnoissa ei ole huomioitu mahdollista Kela-korvausta."
 
-#: .\templates\price_page\price_page.html:37
+#: .\templates\price_page\price_page.html:39
 msgid "Рецепты"
 msgstr "Reseptit"
 
-#: .\templates\price_page\price_page.html:49
+#: .\templates\price_page\price_page.html:51
 msgid "шт"
 msgstr "kpl"
 
-#: .\templates\price_page\price_page.html:58
+#: .\templates\price_page\price_page.html:60
 msgid "Найти свободное время"
 msgstr "Näytä vapaat ajat"
 
-#: .\templates\services_page\services_page.html:9
-#: .\templates\services_page\services_page.html:15
+#: .\templates\services_page\services_page.html:10
+#: .\templates\services_page\services_page.html:16
 msgid "Услуги"
 msgstr "Palvelut"
