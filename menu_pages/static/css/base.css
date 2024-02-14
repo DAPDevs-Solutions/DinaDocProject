@@ -60,7 +60,7 @@ h1, h2, h3, ul, li, p {
 .header__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0 30px 0;
+    padding: 30px 20px;
     margin: auto;
 }
 
@@ -68,10 +68,6 @@ h1, h2, h3, ul, li, p {
 /* HEADER. User navigation */
 .header__wrapper--logo {
     z-index: 10;
-}
-
-.header__wrapper--logo img {
-    max-width: 120px;
 }
 
 .header__wrapper--user_nav {
@@ -232,7 +228,7 @@ footer {
     align-items: center;
     color: #3B485B;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 30px 20px;
 }
 
 .footer__wrapper--logo_rights span {
