@@ -94,8 +94,8 @@ h1, h2, h3, p {
 }
 
 .contact-us__form {
-    border: 2px solid #794A83;
-    padding: 45px 55px 45px 55px;
+    border: 1px solid #794A83;
+    padding: 45px 55px;
     border-radius: 30px;
 }
 

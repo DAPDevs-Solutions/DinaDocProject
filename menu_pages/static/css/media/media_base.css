@@ -17,9 +17,10 @@
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .header__wrapper--logo img {
-        min-width: 120px;
+        min-width: 105px;
+        max-width: 110px;
     }
 
     .header__wrapper--user_nav {
@@ -91,7 +92,7 @@
         flex-direction: column;
         position: absolute;
         transition: transform .5s;
-        top: 100px;
+        top: 115px;
         padding-top: 20px;
         left: 0;
         height: max-content;
@@ -218,6 +219,7 @@
 
     .contact-info-footer {
         min-width: calc(100% - 100px);
+        justify-content: space-evenly;
     }
 
     .rights {
@@ -226,7 +228,7 @@
     }
 
     .footer__wrapper--logo_rights img {
-        min-width: 180px;
+        min-width: 160px;
         max-width: 220px;
     }
 
@@ -251,19 +253,35 @@
         font-size: 15px;
     }
 
-    .contact-info-footer {
-        justify-content: space-evenly;
-    }
-
     .footer-align-center {
-        max-width: max-content;
+        max-width: min-content;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+
+    .burger-menu {
+        width: 30px;
+        height: 25px;
+    }
+
     .contact-info-footer {
         flex-direction: column;
         min-height: 300px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__wrapper{
+        padding: 10px 0;
+    }
+
+    .navigation {
+        top: 75px;
     }
 }
 

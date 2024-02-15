@@ -70,6 +70,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .contact-us {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .contact-us__info {
         min-height: 250px;
     }
@@ -77,5 +82,24 @@
     .our-contacts {
         position: unset;
         flex-direction: column;
+    }
+
+    .contact-us__form {
+        padding: 30px 30px;
+    }
+
+    .contact-us__form h2 {
+        font-size: 17px;
+    }
+    .contact-us__form p {
+        font-size: 14px;
+    }
+
+    .send-btn {
+        font-size: 15px;
+    }
+
+    .contact-us__section {
+        padding-bottom: 30px;
     }
 }

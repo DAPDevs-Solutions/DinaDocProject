@@ -22,13 +22,13 @@ header {
 
 .header-footer_container {
     max-width: 1400px;
-    min-width: 320px;
+    min-width: 280px;
     box-sizing: border-box
 }
 
 .container {
     max-width: 1240px;
-    min-width: 320px;
+    min-width: 280px;
     box-sizing: border-box;
     margin: 0 auto;
 
@@ -40,7 +40,7 @@ input, select, textarea {
 
 input:focus,
 textarea:focus {
-    outline: 2px solid #602a6e;
+    outline: 1px solid #602a6e;
     border: none;
     border-radius: 30px;
 }
