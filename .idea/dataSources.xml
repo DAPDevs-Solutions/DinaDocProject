@@ -10,5 +10,12 @@
       <jdbc-url>jdbc:sqlite:C:\Users\lukja\PycharmProjects\DinaDocProject\db.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="lukjanxk.beget.tech" uuid="afb2d396-e26d-4a5f-ac98-4396ac7f53f1">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://lukjanxk.beget.tech:3306/lukjanxk_dinadoc</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
