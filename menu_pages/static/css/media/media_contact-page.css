@@ -1,21 +1,15 @@
-@media only screen and (max-width: 1100px) {
-    .contact-us {
-        padding: 50px;
-    }
-
-    .contact-us__form {
-        max-width: 400px;
-    }
-}
-
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
     h1 {
         font-size: 160%;
+    }
+    .contact-us__info h2 {
+        text-align: center;
+        font-size: 21px;
     }
 
     .contact-us {
         flex-direction: column;
+        justify-content: space-between;
     }
 
     .contact-us__info {
@@ -24,37 +18,15 @@
     }
 
     .work-hours {
-        display: inline-flex;
-        max-width: 65%;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .work-hours > *:not(:last-child) {
-        margin-bottom: 0;
-    }
-
-    .our-contacts {
-        display: flex;
-        justify-content: space-between;
+        display: block;
     }
 
     .address, .phone, .email {
         margin-bottom: 0;
     }
 
-    .address-icon, .phone-icon, .email-icon {
-        margin-right: 20px;
-    }
-
     .contact-us__form {
         max-width: 100%;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .work-hours {
-        display: block;
     }
 
     .work-hours > *:not(:last-child) {
@@ -65,7 +37,6 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        flex-direction: column;
     }
 }
 
@@ -75,6 +46,11 @@
         padding-right: 30px;
     }
 
+    .work-hours {
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .contact-us__info {
         min-height: 250px;
     }
@@ -82,6 +58,7 @@
     .our-contacts {
         position: unset;
         flex-direction: column;
+        margin: 0 auto;
     }
 
     .contact-us__form {

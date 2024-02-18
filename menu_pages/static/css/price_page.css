@@ -10,7 +10,8 @@
 }
 
 .prices-table {
-    margin-bottom: 65px;
+    margin-bottom: 50px;
+    padding: 0 50px;
 }
 
 
@@ -29,11 +30,12 @@
     color: #3B485B;
 }
 
-.title__data, .price__data {
-    padding-left: 20px;
+.title__data {
+    padding-left: 10px;
 }
 
 .price__data {
+    width: 100px;
     box-sizing: border-box;
     font-weight: bold;
 }
@@ -41,6 +43,8 @@
 .table_row {
     height: 70px;
     border-bottom: 1px solid #794A83;
+    padding-left: 20px;
+
 }
 
 .appointment-prices p {

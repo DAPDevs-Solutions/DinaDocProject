@@ -34,8 +34,8 @@
 
 .doc-photo img {
     border-radius: 30px;
+    max-width: 500px;
 }
-
 
 
 /* About health section */
@@ -91,7 +91,6 @@
 }
 
 
-
 /* About doc description section */
 .about-doc-desc__section {
     padding: 0 0 100px 0;
@@ -136,14 +135,15 @@
 .about-doc__photo img {
     border-radius: 30px;
     max-width: 100%;
+    max-height: 600px;
 }
-
 
 
 /* Personal approach section */
 .personal-approach__section {
     padding: 0 0 100px 0;
 }
+
 .personal-approach p {
     text-align: center;
     font-weight: 400;
@@ -163,14 +163,13 @@
     border: 0;
     background-color: #794a83;
     color: white;
-    padding: 10px 20px 10px 20px;  
+    padding: 10px 20px 10px 20px;
     margin: 0 auto;
 }
 
 .appointment-icon {
     padding-right: 10px;
 }
-
 
 
 /* Google map section */

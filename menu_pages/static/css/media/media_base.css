@@ -276,8 +276,12 @@
 }
 
 @media screen and (max-width: 320px) {
-    .header__wrapper{
+    .header__wrapper {
         padding: 10px 0;
+    }
+
+    .header__wrapper--logo img {
+        padding-left: 10px;
     }
 
     .navigation {
