@@ -1,32 +1,18 @@
-.container {
-    max-width: 1240px;
-    min-width: 320px;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-  
-h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
-
-
-
 /* About doc section */
 .about-doc__section {
-    background-color: #ede3f6;    
+    background-color: #c19bcc30;
     margin-bottom: 100px;
 }
 
 .about-doc {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .doc-info {
     text-align: center;
-    max-width: 610px;
+    max-width: 500px;
 }
 
 #doc-name {
@@ -48,8 +34,8 @@ h1, h2, h3, p {
 
 .doc-photo img {
     border-radius: 30px;
+    max-width: 500px;
 }
-
 
 
 /* About health section */
@@ -70,6 +56,7 @@ h1, h2, h3, p {
     font-size: 20px;
     margin: 0 auto 50px auto;
     line-height: 29px;
+    padding: 0 20px;
 }
 
 
@@ -77,11 +64,15 @@ h1, h2, h3, p {
 .advantages-icons {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.advantages-icons img {
+    max-width: 100px;
 }
 
 .advantages-icons p {
-    max-width: 220px;
+    max-width: 185px;
 }
 
 .individual_approach,
@@ -100,7 +91,6 @@ h1, h2, h3, p {
 }
 
 
-
 /* About doc description section */
 .about-doc-desc__section {
     padding: 0 0 100px 0;
@@ -108,21 +98,22 @@ h1, h2, h3, p {
 
 .about-doc-desc {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     box-sizing: border-box;
 }
 
 .about-doc__fullinfo {
-    max-width: 620px;
+    max-width: 555px;
     background-color: #794a83;
     padding: 45px 35px 45px 35px;
     border-radius: 32px;
     box-sizing: border-box;
+    max-height: 600px;
 }
 
 .about-doc__fullinfo h2 {
     text-align: center;
-    margin: 0 0 70px 0;
+    margin: 0 0 40px 0;
     font-weight: 500;
     color: #FFFFFF;
     font-size: 40px;
@@ -131,23 +122,28 @@ h1, h2, h3, p {
 .about-doc__fullinfo p {
     text-align: center;
     line-height: 1.5em;
-    margin-bottom: 20px;
     font-size: 25px;
     font-weight: 300;
     color: #FFFFFF;
 }
 
-.about-doc__photo img {
-    height: 100%;
-    border-radius: 30px;
+.about-doc__fullinfo p:not(:last-child) {
+    margin-bottom: 20px;
+
 }
 
+.about-doc__photo img {
+    border-radius: 30px;
+    max-width: 100%;
+    max-height: 600px;
+}
 
 
 /* Personal approach section */
 .personal-approach__section {
     padding: 0 0 100px 0;
 }
+
 .personal-approach p {
     text-align: center;
     font-weight: 400;
@@ -167,14 +163,13 @@ h1, h2, h3, p {
     border: 0;
     background-color: #794a83;
     color: white;
-    padding: 10px 20px 10px 20px;  
+    padding: 10px 20px 10px 20px;
     margin: 0 auto;
 }
 
 .appointment-icon {
     padding-right: 10px;
 }
-
 
 
 /* Google map section */

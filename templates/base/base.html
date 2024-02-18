@@ -4,8 +4,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media/media_base.css' %}">
+
     <link rel="icon" type="image/x-con" href="{% static 'base/images/favicon.ico' %}">
     <title>{% block title %}{% endblock %}</title>
     {% block css %} {% endblock %}
@@ -16,83 +19,113 @@
 
 </head>
 <body>
-    <header>
-        <div class="header__wrapper header-footer_container">
-            <div class="header__wrapper--logo">
-                <a href="{% url 'menu_page' %}">
-                    <img src="{% static 'base/images/dina_logo.svg' %}" alt="Логотип">
-                </a>
-            </div>
+<header>
+    <div class="header__wrapper header-footer_container">
+        <div class="header__wrapper--logo">
+            <a href="{% url 'menu_page' %}">
+                <img src="{% static 'base/images/dina_logo.svg' %}" alt="Логотип">
+            </a>
+        </div>
 
-            <div class="header__wrapper--user_nav">
-                <div class="user_nav--menu_list">
-                    <ul class="menu_list--list_items">
+        <div class="header__wrapper--user_nav">
+            <div class="user_nav--menu">
+                <nav class="navigation">
+                    <ul class="menu--tabs_items">
                         {% for item in menu %}
                             <li class="item"><a href="{{ item.url }}">{{ item.title }}</a></li>
                         {% endfor %}
                     </ul>
-                    
-                    <div class="lang_block">
+                    <ul class="lang-line">
                         <img src="{% static 'base/images/lang_globus.svg' %}" alt="Глобус">
-                                        
-                        {% if current_language == 'ru' %}
-                            <img src="{% static 'base/images/ru_lang.svg' %}" alt="Русский язык">
-                        {% else %}
-                            <img src="{% static 'base/images/fi_lang.svg' %}" alt="Suomen kieli">
-                        {% endif %}
-                    
-                        <img src="{% static 'base/images/switch_lang.svg' %}" alt="Переключение языка">
-                        <div class="dropdown__langmenu">
-
-                            <ul class="langmenu" aria-labelledby="navbarDropdown">
-                                <form action="{% url 'set_language' %}" method="post">
+                        {% for language in languages %}
+                            <li class="lang-item-line">
+                                <form class="lang-form-line" action="{% url 'set_language' %}" method="post">
                                     {% csrf_token %}
                                     <input name="next" type="hidden" value="{{ redirect_to }}">
-                                    <select name="language" id="language-selector" onchange="this.form.submit()">
-                                        {% for language in languages %}
-                                            <option value="{{ language.code }}" {% if language.code == current_language %}selected{% endif %}>
-                                                {{ language.name_local }}
-                                            </option>
-                                        {% endfor %}
-                                    </select>
+                                    <input type="hidden" name="language" value="{{ language.code }}">
+                                    <a onclick="this.parentNode.submit();">
+                                        {{ language.name_local }} ({{ language.code }})
+                                    </a>
                                 </form>
-                            </ul>
-                        </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <div class="nav_list--make_appointment-burger make-appointment-btn-all">
+
+                        <button class="btn nav_list--button">
+                            <img class="appointment-icon" src="{% static 'base/images/make_appointment_icon.svg' %}"
+                                 alt="Иконка записи на прием">
+                            <span>{% translate 'Записаться на прием' %}</span>
+                        </button>
+                    </div>
+                </nav>
+
+                <div class="burger-menu" id="burger">
+                    <span></span>
+                </div>
+                {#                    <button class="burger-menu" id="burger">#}
+                {#                        <span></span>#}
+                {#                        <span></span>#}
+                {#                        <span></span>#}
+                {#                    </button>#}
+
+                <div class="lang_block" id="lang_blockID">
+                    <img src="{% static 'base/images/lang_globus.svg' %}" alt="Глобус">
+
+                    {% if current_language == 'ru' %}
+                        <img src="{% static 'base/images/ru_lang.svg' %}" alt="Русский язык">
+                    {% else %}
+                        <img src="{% static 'base/images/fi_lang.svg' %}" alt="Suomen kieli">
+                    {% endif %}
+
+                    <img id="lang-arrow" src="{% static 'base/images/switch_lang.svg' %}" alt="Переключение языка">
+                    <div id="dropdown__langmenu" class="dropdown__langmenu">
+                        <ul class="lang-list">
+                            {% for language in languages %}
+                                <form class="lang-form" action="{% url 'set_language' %}" method="post">
+                                    {% csrf_token %}
+                                    <input name="next" type="hidden" value="{{ redirect_to }}">
+                                    <input type="hidden" name="language" value="{{ language.code }}">
+                                    <a onclick="this.parentNode.submit();">
+                                        {{ language.name_local }} ({{ language.code }})
+                                    </a>
+                                </form>
+                            {% endfor %}
+                        </ul>
                     </div>
                 </div>
+            </div>
 
-                <div class="nav_list--make_appointment">
-                    <button class="btn nav_list--button">
-                        <img class="appointment-icon" src="{% static 'base/images/make_appointment_icon.svg' %}" alt="Иконка записи на прием">
-                        {% translate 'Записаться на прием' %}
-                    </button>
-                </div>
+            <div class="nav_list--make_appointment make-appointment-btn-all">
+                <button class="btn nav_list--button">
+                    <img class="appointment-icon" src="{% static 'base/images/make_appointment_icon.svg' %}"
+                         alt="Иконка записи на прием">
+                    <span>{% translate 'Записаться на прием' %}</span>
+                </button>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    {% block content %}{% endblock %}
+{% block content %}{% endblock %}
 
-    <footer>
-        <div class="footer__wrapper header-footer_container">
-            <div class="footer__wrapper--logo_rights">
-                <img src="{% static 'base/images/dina_logo.svg' %}" alt="Логотип">
-
-                <p>© Dina Varlamova Oy 2024</p>
+<footer>
+    <div class="footer__wrapper header-footer_container">
+        <div class="footer__wrapper--logo_rights">
+            <img src="{% static 'base/images/dina_logo.svg' %}" alt="Логотип">
+            <div class="rights">
+                <span>© Dina Varlamova Oy 2024</span>
             </div>
-
+        </div>
+        <div class="contact-info-footer">
             <div class="footer__wrapper--address footer-align-center">
-                <h3 id="address">Ohtokuja 3A</h3>
-
-                <p>80230 Joensuu</p>
-            </div>
-
-            <div class="footer__wrapper--country_flag">
-                <img src="{% static 'base/images/country_flag.png' %}" alt="">
+                <h3 id="address">Kauppakatu 30</h3>
+                <p>80100 Joensuu</p>
             </div>
 
             <div class="footer__wrapper--contact_mail footer-align-center">
-                <h3 id="email"><a href="mailto: dinavarlamova@gmail.fi" class="doc-email">dinavarlamova@gmail.fi</a></h3>
+                <h3 id="email"><a href="mailto: dinavarlamova@gmail.fi" class="doc-email">dinavarlamova@gmail.fi</a>
+                </h3>
                 <p> {% translate 'Возможен прием в вечернее время и в выходные дни' %} </p>
             </div>
 
@@ -101,6 +134,15 @@
                 <p>{% translate 'Есть онлайн запись на прием' %}</p>
             </div>
         </div>
-    </footer>
+
+        <div class="footer__wrapper--country_flag">
+            <img src="{% static 'base/images/country_flag.png' %}" alt="Flag">
+        </div>
+    </div>
+</footer>
+
+<script src="{% static 'js/menu_list.js' %}"></script>
+<script src="{% static 'js/language.js' %}"></script>
+<script defer src="{% static 'js/burger-menu.js' %}"></script>
 </body>
 </html>

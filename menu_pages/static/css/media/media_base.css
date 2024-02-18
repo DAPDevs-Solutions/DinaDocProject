@@ -1,0 +1,292 @@
+.burger-menu {
+    display: none;
+}
+
+.open {
+    display: flex !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer__wrapper p {
+        font-size: 15px;
+    }
+
+    .footer__wrapper h3 {
+        font-size: 17px;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .header__wrapper--logo img {
+        min-width: 105px;
+        max-width: 110px;
+    }
+
+    .header__wrapper--user_nav {
+        justify-content: flex-end;
+    }
+
+    .user_nav--menu {
+        margin-right: 20px;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
+
+    /* Displaying the burger menu icon */
+    /*СТИЛЬ НА ВЕСЬ ЭКРАН, МЕНЮ СЛЕВА*/
+    .burger-menu {
+        display: flex;
+        position: relative;
+        z-index: 50;
+        align-items: center;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .burger-menu span {
+        height: 2px;
+        width: 80%;
+        transform: scale(1);
+        background-color: #b85ad0;
+    }
+
+    .burger-menu:before, .burger-menu:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: #b85ad0;
+        transition: all 0.5s ease 0s;
+    }
+
+    .burger-menu:before {
+        top: 0;
+    }
+
+    .burger-menu:after {
+        bottom: 0;
+    }
+
+    .burger-menu.active span {
+        transform: scale(0);
+    }
+
+    .burger-menu.active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+    }
+
+    .burger-menu.active:after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0, 50%);
+    }
+
+
+    /*Panel with tabs items*/
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        transition: transform .5s;
+        top: 115px;
+        padding-top: 20px;
+        left: 0;
+        height: max-content;
+        width: 100%;
+        z-index: 50;
+        overflow-y: auto;
+        background-color: white;
+        animation: burgerAnimation 0.4s;
+        border: 0;
+    }
+
+    .lang_block {
+        display: none;
+    }
+
+    .lang-line {
+        display: flex;
+    }
+
+
+    /*СТИЛЬ ВЫЕЗЖАЮЩЕЙ СЛЕВА МЕНЮ*/
+    /*.burger-menu {*/
+    /*    display: flex;*/
+    /*    position: relative;*/
+    /*    width: 40px;*/
+    /*    height: 40px;*/
+    /*    border: none;*/
+    /*    background-color: #ffffff;*/
+    /*    !*background-color: orange;*!*/
+    /*}*/
+    /*.burger-menu span {*/
+    /*    position: absolute;*/
+    /*    width: 70%;*/
+    /*    height: 2px;*/
+    /*    background-color: #b85ad0;*/
+    /*}*/
+    /*.burger-menu span:nth-child(1) {*/
+    /*    transform: translateY(10px);*/
+    /*}*/
+    /*.burger-menu span:nth-child(2) {*/
+    /*    transform: translateY(19px);*/
+    /*}*/
+    /*.burger-menu span:nth-child(3) {*/
+    /*    transform: translateY(28px);*/
+    /*}*/
+    /*.user_nav--menu.open .burger-menu span:nth-child(1) {*/
+    /*    top: 20px;*/
+    /*    transform: translateY(0) rotate(45deg);*/
+    /*}*/
+    /*.user_nav--menu.open .burger-menu span:nth-child(2) {*/
+    /*    opacity: 0;*/
+    /*}*/
+    /*.user_nav--menu.open .burger-menu span:nth-child(3) {*/
+    /*    top: 20px;*/
+    /*    transform: translateY(0) rotate(-45deg);*/
+    /*}*/
+    /*.navigation {*/
+    /*    position: absolute;*/
+    /*    top: 0;*/
+    /*    left: -200px;*/
+    /*    width: 200px;*/
+    /*    padding-top: 130px;*/
+    /*    background-color: #ffffff;*/
+    /*    z-index: 3;*/
+    /*    border-radius: 10px;*/
+    /*    transition: transform .5s;*/
+    /*}*/
+    /*.user_nav--menu.open .navigation{*/
+    /*    transform: translateX(100%);*/
+    /*}*/
+    .menu--tabs_items {
+        padding: 0 10px 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .item {
+
+        margin-bottom: 15px;
+    }
+
+    .item a {
+        font-size: 1.4rem;
+        padding: 0;
+    }
+
+    .nav_list--make_appointment {
+        display: none;
+    }
+
+    .nav_list--make_appointment-burger {
+        display: flex;
+        padding: 0 10px 10px 20px;
+    }
+
+    .make-appointment-btn-all button {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+
+    /* FOOTER */
+    /*.footer__wrapper p {*/
+    /*    font-size: 20px;*/
+    /*}*/
+    .footer__wrapper--contact_mail p,
+    .footer_wrapper--contact_phone p {
+        /*display: none;*/
+    }
+
+
+    .footer__wrapper {
+        position: relative;
+        margin-bottom: 10px;
+        flex-direction: column;
+        min-height: 370px;
+    }
+
+    .footer__wrapper--logo_rights {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-info-footer {
+        min-width: calc(100% - 100px);
+        justify-content: space-evenly;
+    }
+
+    .rights {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .footer__wrapper--logo_rights img {
+        min-width: 160px;
+        max-width: 220px;
+    }
+
+    .footer__wrapper p {
+        font-size: 15px;
+    }
+
+    .footer__wrapper h3 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 17px;
+    }
+
+    .button {
+        padding: 10px;
+    }
+
+
+    .rights p {
+        font-size: 15px;
+    }
+
+    .footer-align-center {
+        max-width: min-content;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .burger-menu {
+        width: 30px;
+        height: 25px;
+    }
+
+    .contact-info-footer {
+        flex-direction: column;
+        min-height: 300px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__wrapper {
+        padding: 10px 0;
+    }
+
+    .header__wrapper--logo img {
+        padding-left: 10px;
+    }
+
+    .navigation {
+        top: 75px;
+    }
+}
+
+
