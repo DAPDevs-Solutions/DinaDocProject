@@ -1,0 +1,166 @@
+@media screen and (max-width: 1260px) {
+    .google-map__section {
+        padding-right: 55px;
+        padding-left: 55px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    section:not(:first-child) {
+        padding: 0 20px 50px 20px;
+    }
+
+    .advantages-icons img {
+        max-width: 70px;
+        max-height: 70px;
+    }
+
+    .about-doc__section {
+        margin-bottom: 50px;
+    }
+
+    .doc-info {
+        max-width: 400px;
+    }
+
+    .doc-photo img {
+        max-width: 355px;
+    }
+
+
+    /*ЗДОРОВЬЯ ПРЕВЫШЕ ВСЕГО*/
+    #health-above {
+        margin-bottom: 25px;
+        font-size: 2em;
+    }
+
+    #about-clinic {
+        margin-bottom: 40px;
+        font-size: 25px;
+        line-height: 1.5em;
+    }
+
+
+    /*О ДОКТОРЕ ПОДРОБНЕЕ*/
+    .about-doc__fullinfo {
+        padding: 38px 28px 38px 28px;
+        max-width: 100%;
+    }
+
+
+    /**/
+    .about-doc__photo {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    section:not(:first-child) {
+        padding-bottom: 30px;
+    }
+
+    #health-above {
+        font-size: 1.5rem;
+    }
+
+    #about-clinic {
+        font-size: 18px;
+    }
+
+    .about-doc {
+        flex-direction: column;
+    }
+
+    .doc-info {
+        padding: 50px 30px 20px;
+    }
+
+    .doc-photo {
+        padding-bottom: 20px;
+    }
+
+    .doc-photo img {
+        max-width: 330px;
+    }
+
+    #doc-name {
+        font-size: 27px;
+    }
+
+    #doc-spec {
+        font-size: 20px;
+    }
+
+    .about-doc__fullinfo h2 {
+        font-size: 25px;
+        margin-bottom: 35px;
+    }
+
+    .about-doc__fullinfo p {
+        font-size: 17px;
+    }
+
+
+    .advantages-icons {
+        flex-direction: column;
+
+        > div {
+            margin-bottom: 30px;
+        }
+    }
+
+
+    .personal-approach p {
+        font-size: 18px;
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    section:not(:first-child) {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    #doc-name {
+        font-size: 20px;
+    }
+
+    #doc-spec {
+        font-size: 18px;
+    }
+
+    .doc-photo img {
+        max-width: 255px;
+        text-align: justify;
+    }
+
+    #health-above {
+        font-size: 1.4rem;
+    }
+
+    #about-clinic {
+        font-size: 1rem;
+    }
+
+    .about-doc__fullinfo {
+        max-width: 95%;
+    }
+
+    .personal-approach p {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .google-map {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .google-map iframe {
+        max-width: fit-content;
+    }
+
+}

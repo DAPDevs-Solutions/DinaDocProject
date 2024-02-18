@@ -4,6 +4,7 @@
 
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/contact_page.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media/media_contact-page.css' %}">
 {% endblock %}
 
 <title>{% block title %}{% translate 'Контакты' %}{% endblock %}</title>
@@ -18,7 +19,7 @@
                     <div class="work-hours">
                         <h3>{% translate 'Часы работы' %}</h3>
 
-                        <p>{% translate 'пн-пт' %} 10:00 - 20:00,</p>
+                        <p>{% translate 'пн-пт' %} 10:00 - 20:00</p>
                         <p>{% translate 'сб' %} 10:00 - 16:00</p>
                     </div>
 
@@ -26,24 +27,24 @@
                         <div class="address">
                             <div class="address-icon">
                                 <img src="{% static 'main_page/address_icon.svg' %}" alt="Иконка адреса">
-                            </div>  
-                            
+                            </div>
+
                             <p>Ohtokuja 3A, Joensuu 80230</p>
                         </div>
-                        
+
                         <div class="phone">
                             <div class="phone-icon">
                                 <img src="{% static 'main_page/call_icon.svg' %}" alt="Иконка звонка">
                             </div>
-                            
+
                             <p><a id="doc-phone" href="tel:+040 000 0000">040 000 0000</a></p>
                         </div>
-                        
+
                         <div class="email">
                             <div class="email-icon">
                                 <img src="{% static 'main_page/email_icon.svg' %}" alt="Иконка емейла">
                             </div>
-                            
+
                             <p><a href="mailto: dinavarlamova@gmail.fi" class="doc-email">dinavarlamova@gmail.fi</a></p>
                         </div>
                     </div>
@@ -51,27 +52,29 @@
 
                 <div class="contact-us__form">
                     <h2>{% translate 'Отправьте нам сообщение' %}</h2>
-                    
+
                     <p> {% translate 'Не стесняйтесь написать нам. Мы ответим вам как можно скорее.' %}</p>
-                    
+
                     <form method="POST" action="{% url 'contact_page' %}">
                         {% csrf_token %}
-                        
+
                         <div class="form_field">
-{#                            {{ feedback_form.as_p }}#}
+                            {#                            {{ feedback_form.as_p }}#}
                             {% for field in feedback_form %}
-                            <div class="form_field">
-                                <p>{{ field.label }}</p>
-                                <p>{{ field }}</p>
-                            </div>
-                        {% endfor %}
-                            
+                                <div class="form_field">
+                                    <p>{{ field.label }}</p>
+                                    <p>{{ field }}</p>
+                                </div>
+                            {% endfor %}
+
                             <div class="send-button">
                                 <button class="btn send-btn">
-                                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19.0287 3.48693L11 10.5635L2.97133 3.48693M2.02407 1.14443C1.75247 1.14443 1.49199 1.27365 1.29994 1.50365C1.10789 1.73365 1 2.0456 1 2.37087V16.2357C1 16.561 1.10789 16.873 1.29994 17.103C1.49199 17.333 1.75247 17.4622 2.02407 17.4622H19.9759C20.2475 17.4622 20.508 17.333 20.7001 17.103C20.8921 16.873 21 16.561 21 16.2357V2.35247C21 2.0272 20.8921 1.71525 20.7001 1.48525C20.508 1.25525 20.2475 1.12604 19.9759 1.12604H2.02407V1.14443Z" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.0287 3.48693L11 10.5635L2.97133 3.48693M2.02407 1.14443C1.75247 1.14443 1.49199 1.27365 1.29994 1.50365C1.10789 1.73365 1 2.0456 1 2.37087V16.2357C1 16.561 1.10789 16.873 1.29994 17.103C1.49199 17.333 1.75247 17.4622 2.02407 17.4622H19.9759C20.2475 17.4622 20.508 17.333 20.7001 17.103C20.8921 16.873 21 16.561 21 16.2357V2.35247C21 2.0272 20.8921 1.71525 20.7001 1.48525C20.508 1.25525 20.2475 1.12604 19.9759 1.12604H2.02407V1.14443Z"
+                                              stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
                                     </svg>
-                                    
+
                                     {% translate 'Отправить сообщение' %}
                                 </button>
                             </div>

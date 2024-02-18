@@ -1,0 +1,46 @@
+@media only screen and (max-width: 767px) {
+    .make-appointment-btn img {
+        width: 18px;
+        height: 14px;
+    }
+
+    .prices {
+        margin-bottom: 40px;
+    }
+
+    .prices h2 {
+        font-size: 20px;
+    }
+
+    .prices-table {
+        padding: 0 20px;
+    }
+
+    .table_row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100px;
+    }
+
+    .title__data {
+        width: auto;
+        padding-left: unset;
+    }
+
+    .title__data, .price__data {
+        width: 100%;
+    }
+
+    .make-appointment-btn img {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 319px) {
+    .title__data {
+        font-size: 15px;
+    }
+}

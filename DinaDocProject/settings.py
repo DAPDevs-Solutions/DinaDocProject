@@ -70,8 +70,14 @@ WSGI_APPLICATION = 'DinaDocProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'lukjanxk_dinadoc',
+        'USER': 'lukjanxk_dinadoc',
+        'PASSWORD': 'Dina_doc123',
+        'HOST': 'lukjanxk.beget.tech',
+        'PORT': '3306',
     }
 }
 
