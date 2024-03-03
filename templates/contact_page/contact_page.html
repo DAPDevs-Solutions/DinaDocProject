@@ -29,7 +29,7 @@
                                 <img src="{% static 'main_page/address_icon.svg' %}" alt="Иконка адреса">
                             </div>
 
-                            <p>Ohtokuja 3A, Joensuu 80230</p>
+                            <p>Aleksanterinkatu 11, Helsinki 00100</p>
                         </div>
 
                         <div class="phone">
@@ -45,7 +45,7 @@
                                 <img src="{% static 'main_page/email_icon.svg' %}" alt="Иконка емейла">
                             </div>
 
-                            <p><a href="mailto: dinavarlamova@gmail.fi" class="doc-email">dinavarlamova@gmail.fi</a></p>
+                            <p><a href="mailto: luka.klinikka@gmail.fi" class="doc-email">luka.klinikka@gmail.fi</a></p>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,6 @@
                         {% csrf_token %}
 
                         <div class="form_field">
-                            {#                            {{ feedback_form.as_p }}#}
                             {% for field in feedback_form %}
                                 <div class="form_field">
                                     <p>{{ field.label }}</p>
