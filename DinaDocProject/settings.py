@@ -1,5 +1,4 @@
 from pathlib import Path
-from dotenv import load_dotenv
 from django.utils.translation import gettext_lazy as _
 import os
 
@@ -10,12 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-load_dotenv()
-
-SECRET_KEY = os.environ.get('SECRET_KEY')
-if SECRET_KEY is None:
-    raise ValueError('The secret key is not found in .env!')
-
+SECRET_KEY = 'django-insecure-0id^j4y5464%0juwxn#&csg&t)rs9w9mynt6o6z-ic$=qy%%$+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -70,14 +64,14 @@ WSGI_APPLICATION = 'DinaDocProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        # 'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'lukjanxk_dinadoc',
-        # 'USER': 'lukjanxk_dinadoc',
-        # 'PASSWORD': 'Dina_doc123',
-        # 'HOST': 'lukjanxk.beget.tech',
-        # 'PORT': '3306',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'lukjanxk_dinadoc',
+        'USER': 'lukjanxk_dinadoc',
+        'PASSWORD': 'Dina_doc123',
+        'HOST': 'lukjanxk.beget.tech',
+        'PORT': '3306',
     }
 }
 
