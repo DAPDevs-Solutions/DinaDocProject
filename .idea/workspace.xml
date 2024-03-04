@@ -62,7 +62,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -125,6 +125,10 @@
       <workItem from="1705168396896" duration="151000" />
       <workItem from="1706070911122" duration="808000" />
       <workItem from="1708275319289" duration="617000" />
+      <workItem from="1708500200853" duration="812000" />
+      <workItem from="1708845094668" duration="126000" />
+      <workItem from="1708845229087" duration="603000" />
+      <workItem from="1709368213740" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="Added:&#10;- favicon.ico for website icon&#10;&#10;Update: changed text in 'about doc' section">
       <option name="closed" value="true" />
@@ -223,7 +227,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/adding_multilanguage" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
