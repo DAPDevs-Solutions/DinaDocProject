@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 20:32+0700\n"
+"POT-Creation-Date: 2024-03-04 13:18+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 # ГЛАВНАЯ СТРАНИЦА/MAIN PAGE
-#: .\DinaDocProject\settings.py:102
+#: .\DinaDocProject\settings.py:108
 msgid "Russian"
 msgstr ""
 
-#: .\DinaDocProject\settings.py:103
+#: .\DinaDocProject\settings.py:109
 msgid "Finnish"
 msgstr ""
 
@@ -40,15 +40,16 @@ msgstr "Email"
 msgid "Сообщение"
 msgstr "Viesti"
 
-#: .\templates\base\base.html:79 .\templates\menu_page\main_page.html:81
+#: .\templates\base\base.html:58 .\templates\base\base.html:103
+#: .\templates\menu_page\main_page.html:82
 msgid "Записаться на прием"
 msgstr "Varaa aika"
 
-#: .\templates\base\base.html:105
+#: .\templates\base\base.html:129
 msgid "Возможен прием в вечернее время и в выходные дни"
 msgstr "Myös ilta- ja viikonloppuaikoja"
 
-#: .\templates\base\base.html:110
+#: .\templates\base\base.html:134
 msgid "Есть онлайн запись на прием"
 msgstr "Ajanvaraus myös netissä"
 
@@ -82,7 +83,7 @@ msgid "Не стесняйтесь написать нам. Мы ответим 
 msgstr ""
 "Ota rohkeasti yhteyttä, niin otamme sinuun yhteyttä mahdollisimman pian."
 
-#: .\templates\contact_page\contact_page.html:78
+#: .\templates\contact_page\contact_page.html:77
 msgid "Отправить сообщение"
 msgstr "Lähetä viesti"
 
@@ -104,28 +105,27 @@ msgstr "Terveys tulee ensin"
 
 #: .\templates\menu_page\main_page.html:31
 msgid ""
-"Клиника Luka занимается детскими заболеваниями и предлагает "
-"индивидуальный подход к каждому маленькому пациенту и его родителю. Здесь "
-"используются не только передовые технологии, но и создается комфортная "
-"атмосфера, в которой пациенты чувствуют себя спокойно и защищено."
+"Клиника Luka занимается детскими заболеваниями и предлагает индивидуальный "
+"подход к каждому маленькому пациенту и его родителю. Здесь используются не "
+"только передовые технологии, но и создается комфортная атмосфера, в которой "
+"пациенты чувствуют себя спокойно и защищено."
 msgstr ""
-"Luka-klinikka käsittelee lasten sairauksia ja tarjoaa "
-"yksilöllisen lähestymistavan jokaiselle nuorelle potilaalle ja hänen "
-"vanhemmilleen. Täällä ei käytetä vain kehittyneitä tekniikoita, vaan luodaan "
-"myös mukava ilmapiiri, jossa potilaat tuntevat olonsa rauhalliseksi ja "
-"suojatuksi."
+"Luka-klinikka käsittelee lasten sairauksia ja tarjoaa yksilöllisen "
+"lähestymistavan jokaiselle nuorelle potilaalle ja hänen vanhemmilleen. "
+"Täällä ei käytetä vain kehittyneitä tekniikoita, vaan luodaan myös mukava "
+"ilmapiiri, jossa potilaat tuntevat olonsa rauhalliseksi ja suojatuksi."
 
 #: .\templates\menu_page\main_page.html:37
 msgid "Индивидуальный подход"
 msgstr "Yksilöllinen lähestymistapa"
 
 #: .\templates\menu_page\main_page.html:42
-msgid "Современное оборудование"
-msgstr "Nykyaikaiset laitteet"
-
-#: .\templates\menu_page\main_page.html:47
 msgid "Комфортная атмосфера"
 msgstr "Mukava ilmapiiri"
+
+#: .\templates\menu_page\main_page.html:47
+msgid "Современное оборудование"
+msgstr "Nykyaikaiset laitteet"
 
 #: .\templates\menu_page\main_page.html:56
 msgid "О докторе"
@@ -133,7 +133,8 @@ msgstr "Tietoja lääkäristä"
 
 #: .\templates\menu_page\main_page.html:58
 msgid "Я практикующий педиатр с более чем 15-летним опытом работы в больнице."
-msgstr "Olen harjoittava lastenlääkäri, jolla on yli 15 vuoden sairaalakokemus."
+msgstr ""
+"Olen harjoittava lastenlääkäri, jolla on yli 15 vuoden sairaalakokemus."
 
 #: .\templates\menu_page\main_page.html:60
 msgid "Моя главная задача – забота о здоровье ваших детей."
@@ -155,11 +156,11 @@ msgstr "Avaa ovi vauvallesi hyvän terveyden maailmaan!"
 msgid "Хотите индивидуальный подход? Клиника"
 msgstr "Kun haluat yksilöllistä hoitoa,"
 
-#: .\templates\menu_page\main_page.html:77
+#: .\templates\menu_page\main_page.html:78
 msgid "Luka"
 msgstr "Luka"
 
-#: .\templates\menu_page\main_page.html:77
+#: .\templates\menu_page\main_page.html:78
 msgid " к Вашим услугам!"
 msgstr "-klinikka on sinua varten"
 
