@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dabf8d08-ac41-4fc4-8943-fe98557f0fba" name="Changes" comment="Intermediate files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu_pages/static/css/media/media_base.css" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/static/css/media/media_base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu_pages/static/js/burger-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/menu_pages/static/js/burger-menu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +131,7 @@
       <workItem from="1708845094668" duration="126000" />
       <workItem from="1708845229087" duration="603000" />
       <workItem from="1709368213740" duration="12000" />
+      <workItem from="1709637307182" duration="7958000" />
     </task>
     <task id="LOCAL-00001" summary="Added:&#10;- favicon.ico for website icon&#10;&#10;Update: changed text in 'about doc' section">
       <option name="closed" value="true" />
@@ -235,7 +238,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="media_Pavel" />
                       </list>
                     </value>
                   </entry>
@@ -262,7 +265,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DinaDocProject$6kyu.coverage" NAME="6kyu Coverage Results" MODIFIED="1705516950088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../codewars/6 kyu py" />
-    <SUITE FILE_PATH="coverage/DinaDocProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1709532453284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DinaDocProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1709535491664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DinaDocProject$manage_py.coverage" NAME="manage.py Coverage Results" MODIFIED="1705680300075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DinaDocProject$DInaDocProject.coverage" NAME="DInaDocProject Coverage Results" MODIFIED="1705302949045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:\Users\lukja\PycharmProjects\DinaDocProject" />
   </component>
